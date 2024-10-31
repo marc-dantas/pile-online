@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box {
+    height: 100%;
+}
+
+.has-logo-font {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.has-text-huge {
+    font-size: 700%; 
+}
+
+.kw {
+    color: #d65923;
+}
+
+.str {
+    color: #14b309;
+}
+
+.op {
+    color: #5a99f1;
+}
+
+.n {
+    color: #bddcff;
+}
+
+.c {
+    color: #747474;
+}
