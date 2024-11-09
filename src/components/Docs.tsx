@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 export function DocsContent({ children }: { children: ReactNode }) {
     return (
-        <div id="top" className="box p-6">
+        <div id="top" className="box">
             <div className="content">
                 {children}
             </div>
@@ -12,7 +12,7 @@ export function DocsContent({ children }: { children: ReactNode }) {
 
 export function Title({ children }: { children: ReactNode }) {
     return (
-        <h1 className="title is-1">{children}</h1>
+        <h1 className="title is-1 is-size-4-mobile">{children}</h1>
     )
 }
 
@@ -24,18 +24,18 @@ export function Subtitle({ children }: { children: ReactNode }) {
 
 export function P({ children }: { children: ReactNode }) {
     return (
-        <p className="has-text-justified is-size-5">{children}</p>
+        <p className="has-text-justified has-text-left-mobile is-size-5">{children}</p>
     )
 }
 
 export function Title2({ children }: { children: ReactNode }) {
     return (
-        <h2 className="title is-3">{children}</h2>
+        <h2 className="title is-3 is-size-5-mobile">{children}</h2>
     )
 }
 
 export function Title3({ children }: { children: ReactNode }) {
     return (
-        <h3 className="title is-4">{children}</h3>
+        <h3 className="title is-4 is-size-6-mobile">{children}</h3>
     )
 }

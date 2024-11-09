@@ -15,7 +15,7 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
 
   return (
     <div className="columns">
-      <div className="column is-2">
+      <div className="column is-hidden-mobile is-2">
         <Sidebar>
           <SidebarGroup title="Introduction">
             <li>

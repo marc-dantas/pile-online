@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en" className="has-navbar-fixed-top" data-theme="dark">
       <body>
         {children}
       </body>

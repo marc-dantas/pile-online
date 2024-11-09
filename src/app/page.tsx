@@ -98,7 +98,7 @@ export default function Home() {
             <div className="container">
               <h2 className="title has-logo-font has-text-centered">Features</h2>
               <div className="box p-6">
-                <div className="columns has-text-justified">
+                <div className="columns is-8 has-text-justified">
                   <div className="column is-one-third">
                     <div className="content is-size-4">
                       <h4 className="has-text-weight-bold">Intuitive</h4>
@@ -118,7 +118,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="columns  has-text-justified">
+                <div className="columns is-8 has-text-justified">
                   <div className="column is-one-third">
                     <div className="content is-size-4">
                       <h4 className="has-text-weight-bold">Open Source</h4>

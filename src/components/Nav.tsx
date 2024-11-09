@@ -6,7 +6,7 @@ export interface NavProps {
 
 export default function Nav({ children }: NavProps) {
     return (
-        <nav className="navbar">
+        <nav className="navbar has-background-black is-fixed-top">
             <div className="navbar-brand">
                 <a href="/" className="navbar-item">
                     <strong className="has-logo-font">pile</strong>
@@ -23,7 +23,7 @@ export default function Nav({ children }: NavProps) {
 
 export function NavDocs() {
     return (
-        <nav className="navbar">
+        <nav className="navbar has-background-black is-fixed-top">
             <div className="navbar-brand">
                 <a href="/docs" className="navbar-item">
                     <strong className="has-logo-font">docs</strong>
