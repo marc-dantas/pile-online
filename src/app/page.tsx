@@ -1,5 +1,7 @@
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
+import Code from "@/components/Code";
+import { Kw, Op, N } from "@/components/Code";
 
 export default function Home() {
   return (
@@ -7,7 +9,6 @@ export default function Home() {
       <header className="hero is-medium">
         <div className="hero-head">
           <Nav>
-            <a className="navbar-item" href="/guide">Guide</a>
             <a className="navbar-item" href="/docs">Documentation</a>
           </Nav>
         </div>
@@ -24,10 +25,10 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="column is-narrow">
-                    <a href="/guide" className="button is-large is-rounded is-light">Read the Guide</a>
+                    <a href="/docs" className="button is-large is-rounded is-light">Go to Documentation</a>
                   </div>
                   <div className="column is-narrow">
-                    <a href="/docs" className="button is-large is-rounded is-light">Go to Documentation</a>
+                    <a href="#learnmore" className="button is-large is-rounded is-light">Learn more</a>
                   </div>
                 </div>
               </div>
@@ -36,19 +37,20 @@ export default function Home() {
                   <div className="columns is-multiline">
                     <div className="column is-full">
                       <p className="subtitle has-text-weight-semibold"><code>./fib.pile</code></p>
-                      <pre className="has-text-white is-size-4">
-                        <span className="kw">proc</span> fib<br />
-                        <span className="n">  0 1</span><br />
-                        <span className="kw">  loop</span><br />
-                        <span className="op">    dup</span> N <span className="op">&gt;=</span> <span className="kw">if</span><br />
-                        <span className="op">      dup dump</span><br />
-                        <span className="op">      over over +</span><br />
-                        <span className="kw">    else stop end</span><br />
-                        <span className="kw">  end</span><br />
-                        <span className="kw">end</span><br /><br />
-                        <span className="kw">def</span> N <span className="n">400</span> <span className="kw">end</span><br />
+                      <Code>
+                        <Kw x="proc" /> fib<br />
+                        <N x="  0 1" /><br />
+                        <Kw x="  loop" /><br />
+                        <Op x="    dup" /> N <Op x=">=" /> <Kw x="if" /><br />
+                        <Op x="      dup dump" /><br />
+                        <Op x="      over over +" /><br />
+                        <Kw x="    else stop end" /><br />
+                        <Kw x="  end" /><br />
+                        <Kw x="end" /><br />
+                        <br />
+                        <Kw x="def" /> N <N x="400" /> <Kw x="end" /><br />
                         fib<br />
-                      </pre>
+                      </Code>
                     </div>
                     <div className="column is-narrow">
                       <a href="https://github.com/marc-dantas/pile/tree/master/examples" className="button is-medium">More examples</a>
@@ -62,7 +64,7 @@ export default function Home() {
       </header>
       <main className="hero">
         <div className="hero-body">
-          <section className="section">
+          <section id="learnmore" className="section">
             <div className="container">
               <div className="columns is-multiline">
                 <div className="column is-one-third">
@@ -143,12 +145,15 @@ export default function Home() {
               <h2 className="title has-logo-font has-text-centered">Learn Pile</h2>
               <div className="box p-6">
                 <div className="content">
-                  <p className="is-size-3">Dive into the fundamentals of Pile and discover the simplicity and power of stack-based programming!</p>
-                  <p className="is-size-4">There are two ways of learning Pile:</p>
-                  <ul className="is-size-4">
-                    <li><a href="/guide">Guide</a>: If you want a faster approach and start programming in Pile right after reading, it's better to choose the Guide.</li>
-                    <li><a href="/docs">Documentation</a>: If you want a detailed description and a better understanding of how everything works in this language, it's better to choose the Documentation.</li>
-                  </ul>
+                  <div className="columns is-multiline is-centered">
+                    <div className="column is-full">
+                      <p className="is-size-3">Dive into the fundamentals of Pile and discover the simplicity and power of stack-based programming!</p>
+                      <p className="is-size-4">You can read the documentation of the Pile programming language to learn it.</p>
+                    </div>
+                    <div className="column is-narrow">
+                      <a href="/docs" className="button is-medium is-rounded is-light">Go to Documentation</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
