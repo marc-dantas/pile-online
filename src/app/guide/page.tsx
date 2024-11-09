@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <header className="hero is-medium">
         <div className="hero-head">
-          <Nav>8428
+          <Nav>
             <a className="navbar-item is-active" href="/guide">Guide</a>
             <a className="navbar-item" href="/docs">Documentation</a>
           </Nav>
