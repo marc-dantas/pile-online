@@ -3,19 +3,19 @@ import "./style.css";
 import "bulma";
 
 export const metadata: Metadata = {
-  title: "Pile Programming Language",
+    title: "Pile Programming Language",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className="has-navbar-fixed-top" data-theme="dark">
-      <body>
-        {children}
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" className="has-navbar-fixed-top" data-theme="dark">
+            <body>
+                {children}
+            </body>
+        </html>
+    );
 }
