@@ -22,10 +22,21 @@ export default function Docs() {
         Joy, a well-established stack-based language, is known for its unique data structure handling, allowing fine-grained control over data manipulation. Despite its slightly cryptic syntax, Joy has become a respected model for efficient stack-based computation in various environments.
       </P>
       <P>
-        The other key influence, Porth, is a lesser-known stack-based language developed by Russian livestreamer Alexey Kutepov (also known as Tsoding). Porth’s development journey was unique in that Kutepov live-streamed nearly every stage of its creation, starting with an implementation in Python. This open and engaging approach to language development, now available on his YouTube channel <a href="https://youtube.com/@TsodingDaily">@TsodingDaily</a>, became a major inspiration for Pile&apos;s development.
+        The other key influence, Porth, is a lesser-known stack-based language developed by Russian livestreamer Alexey Kutepov (also known as Tsoding). Porth&apos;s development journey was unique in that Kutepov live-streamed nearly every stage of its creation, starting with an implementation in Python. This open and engaging approach to language development, now available on his YouTube channel <a href="https://youtube.com/@TsodingDaily">@TsodingDaily</a>, became a major inspiration for Pile&apos;s development.
       </P>
       <P>
         Originally, Pile went by the name <i>Somescript</i> and featured a different syntax. However, as the language evolved, it adapted new structures and refined its syntax to become what it is today: a stack-based, intuitively designed language aimed at simplifying complex programming concepts.
+      </P>
+      <Title2>Why Pile?</Title2>
+      <P>
+        Pile was created with educational goals at its core, designed to introduce users to stack-based programming principles in an accessible way. It simplifies complex concepts in programming by centering its syntax and operations around a stack model, allowing users to engage directly with fundamental operations like pushing, popping, and manipulating stack elements. While Pile is not built for large-scale production, it serves as an excellent tool for understanding core programming logic and experimenting with efficient mathematical algorithms that benefit from its stack-based design.
+      </P>
+      <P>
+        Pile&apos;s focus on educational use makes it ideal for those studying computer science, especially those interested in foundational principles, algorithmic thinking, and logical reasoning. The language offers an efficient approach to certain mathematical and algorithmic tasks, enabling users to explore solutions with a minimalistic and efficient coding style that leverages Pile&apos;s unique approach.
+      </P>
+      <Title2>The future of Pile</Title2>
+      <P>
+        Looking to the future, we envision Pile becoming an open learning community for enthusiasts and learners alike, where ideas, projects, and educational content can flourish. Although the Pile community is still in its early days, we are excited to grow it together with other curious minds and share Pile&apos;s potential with the world. We&apos;re eager to see Pile evolve alongside its community, gathering feedback and insights that can shape its future directions and applications.
       </P>
     </DocsPage>
   );
