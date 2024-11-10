@@ -7,7 +7,7 @@ import { Kw, Op, N } from "@/components/Code";
 export default function Home() {
   return (
     <>
-      <header className="hero is-medium">
+      <header className="hero">
         <div className="hero-head">
           <Nav>
             <a className="navbar-item" href="/docs">Documentation</a>
@@ -56,7 +56,7 @@ export default function Home() {
                       </Code>
                     </div>
                     <div className="column is-narrow">
-                      <a href="https://github.com/marc-dantas/pile/tree/master/examples" className="button is-medium">More examples</a>
+                      <a href="https://github.com/marc-dantas/pile/tree/master/examples" className="button">More examples</a>
                     </div>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ export default function Home() {
                 <div className="column is-one-third">
                   <div className="box p-6">
                     <p className="title is-4 has-text-centered">Bridging the Gap</p>
-                    <p className="is-size-5 has-text-justified">
+                    <p className="is-size-5 has-text-justified has-text-left-mobile">
                       Pile is a comprehensive educational tool designed to bridge the gap between novice programmers and one of the most feared foundational computer science concepts.
                     </p>
                   </div>
@@ -81,7 +81,7 @@ export default function Home() {
                 <div className="column is-one-third">
                   <div className="box p-6">
                     <p className="title is-4 has-text-centered">Understanding Stack-Based Programming</p>
-                    <p className="is-size-5 has-text-justified">
+                    <p className="is-size-5 has-text-justified has-text-left-mobile">
                       With a focus on stack-based programming, Pile empowers learners to visualize how data is manipulated, fostering a deeper understanding of algorithms and data structures.
                     </p>
                   </div>
@@ -89,7 +89,7 @@ export default function Home() {
                 <div className="column is-one-third">
                   <div className="box p-6">
                     <p className="title is-4 has-text-centered">A Supportive Learning Environment</p>
-                    <p className="is-size-5 has-text-justified">
+                    <p className="is-size-5 has-text-justified has-text-left-mobile">
                       Our goal is to create a supportive environment where users can experiment, learn, and grow in their programming journey without the intimidation often associated with coding.
                     </p>
                   </div>
@@ -101,7 +101,7 @@ export default function Home() {
             <div className="container">
               <h2 className="title has-logo-font has-text-centered">Features</h2>
               <div className="box p-6">
-                <div className="columns is-8 has-text-justified">
+                <div className="columns is-8 has-text-justified has-text-left-mobile">
                   <div className="column is-one-third">
                     <div className="content is-size-4">
                       <h4 className="has-text-weight-bold">Intuitive</h4>
@@ -121,7 +121,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="columns is-8 has-text-justified">
+                <div className="columns is-8 has-text-justified has-text-left-mobile">
                   <div className="column is-one-third">
                     <div className="content is-size-4">
                       <h4 className="has-text-weight-bold">Open Source</h4>
@@ -154,7 +154,7 @@ export default function Home() {
                       <p className="is-size-4">You can read the documentation of the Pile programming language to learn it.</p>
                     </div>
                     <div className="column is-narrow">
-                      <a href="/docs" className="button is-medium is-rounded is-light">Go to Documentation</a>
+                      <a href="/docs" className="button is-rounded is-light">Go to Documentation</a>
                     </div>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="column is-narrow">
-                      <a href="https://github.com/marc-dantas/pile" className="button is-link is-medium is-rounded">Discord server</a>
+                      <a href="https://github.com/marc-dantas/pile" className="button is-link is-rounded">Discord server</a>
                     </div>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="column is-narrow">
-                    <a href="https://github.com/marc-dantas/pile" className="button is-medium is-dark is-rounded">GitHub Repository</a>
+                    <a href="https://github.com/marc-dantas/pile" className="button is-dark is-rounded">GitHub Repository</a>
                   </div>
                 </div>
               </div>
