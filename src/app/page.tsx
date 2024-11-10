@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Code from "@/components/Code";
+import Image from "next/image"
 import { Kw, Op, N } from "@/components/Code";
 
 export default function Home() {
@@ -19,7 +20,9 @@ export default function Home() {
               <div className="column is-half">
                 <div className="columns is-centered is-multiline">
                   <div className="column is-full">
-                    <p className="has-text-weight-bold has-logo-font has-text-huge">pile</p>
+                    <Image alt="logo" width={300} height={300} src="/logo.svg" />
+                  </div>
+                  <div className="column is-full">
                     <p className="is-italic is-size-4">
                       An educational stack-based programming language designed to simplify learning in programming logic, stack-based structures, and core computer science principles.
                     </p>

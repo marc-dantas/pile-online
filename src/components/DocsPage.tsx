@@ -24,6 +24,9 @@ export default function DocsPage({ children }: { children: ReactNode }) {
                         <div className="column is-narrow">
                             <a href="#top" className="button is-small is-rounded is-light">Back to top</a>
                         </div>
+                        <div className="column is-narrow">
+                            <a href="/" className="button is-small is-rounded is-light">Back to Home</a>
+                        </div>
                     </div>
                 </div>
             </main>

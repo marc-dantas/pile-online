@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import Image from "next/image"
 
 export interface NavProps {
     children: ReactNode,
@@ -9,11 +10,11 @@ export default function Nav({ children }: NavProps) {
         <nav className="navbar has-background-black is-fixed-top">
             <div className="navbar-brand">
                 <a href="/" className="navbar-item">
-                    <strong className="has-logo-font">pile</strong>
+                    <Image alt="logo" width={40} height={100} src="/logo_text.svg" />
                 </a>
             </div>
             <div className="navbar-menu">
-                <div className="navbar-end">
+                <div className="navbar-start">
                     {children}
                 </div>
             </div>
@@ -25,14 +26,9 @@ export function NavDocs() {
     return (
         <nav className="navbar has-background-black is-fixed-top">
             <div className="navbar-brand">
-                <a href="/docs" className="navbar-item">
-                    <strong className="has-logo-font">docs</strong>
+                <a href="/" className="navbar-item">
+                    <Image alt="logo" width={40} height={100} src="/logo_text.svg" />
                 </a>
-            </div>
-            <div className="navbar-menu">
-                <div className="navbar-start">
-                    <a className="navbar-item" href="/">Back to home</a>
-                </div>
             </div>
         </nav>
     )
