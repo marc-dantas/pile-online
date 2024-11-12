@@ -4,6 +4,7 @@ import "bulma";
 
 export const metadata: Metadata = {
     title: "Pile Programming Language",
+    description: "Educational Stack-based Programming language",
 };
 
 export default function RootLayout({
