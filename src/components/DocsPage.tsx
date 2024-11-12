@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { NavDocs } from "@/components/Nav";
 import { DocsContent } from "@/components/Docs";
 import DocsSidebar from "@/components/DocsSidebar";
+import Link from "next/link";
 
 export default function DocsPage({ children }: { children: ReactNode }) {
     return (
@@ -25,7 +26,7 @@ export default function DocsPage({ children }: { children: ReactNode }) {
                             <a href="#top" className="button is-small is-rounded is-light">Back to top</a>
                         </div>
                         <div className="column is-narrow">
-                            <a href="/" className="button is-small is-rounded is-light">Back to Home</a>
+                            <Link href="/" className="button is-small is-rounded is-light">Back to home</Link>
                         </div>
                     </div>
                 </div>

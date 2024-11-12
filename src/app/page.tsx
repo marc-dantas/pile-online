@@ -190,10 +190,10 @@ export default function Home() {
                                     <div className="column is-full">
                                         <div className="content">
                                             <p className="is-size-3">
-                                                Become an active part of Pile's evolution!
+                                                Become an active part of Pile&apos;s evolution!
                                             </p>
                                             <p className="is-size-4">
-                                                Visit the official GitHub repository to explore in-depth examples, access the full source code, and contribute directly to this innovative, stack-based language. Whether you're refining existing features, adding new ones, or simply learning, your contributions are invaluable to shaping Pile's future.
+                                                Visit the official GitHub repository to explore in-depth examples, access the full source code, and contribute directly to this innovative, stack-based language. Whether you&apos;re refining existing features, adding new ones, or simply learning, your contributions are invaluable to shaping Pile&apos;s future.
                                             </p>
                                         </div>
                                     </div>
