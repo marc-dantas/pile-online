@@ -45,7 +45,7 @@ export default function Home() {
                                                 <N x="  0 1" /><br />
                                                 <Kw x="  loop" /><br />
                                                 <Op x="    dup" /> N <Op x=">=" /> <Kw x="if" /><br />
-                                                <Op x="      dup dump" /><br />
+                                                <Op x="      dup println" /><br />
                                                 <Op x="      over over +" /><br />
                                                 <Kw x="    else stop end" /><br />
                                                 <Kw x="  end" /><br />
