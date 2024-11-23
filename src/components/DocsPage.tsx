@@ -20,13 +20,9 @@ export default function DocsPage({ children }: { children: ReactNode }) {
                             {children}
                         </DocsContent>
                     </DocsSidebar>
-                    <hr />
                     <div className="columns is-centered">
                         <div className="column is-narrow">
-                            <a href="#top" className="button is-small is-rounded is-light">Back to top</a>
-                        </div>
-                        <div className="column is-narrow">
-                            <Link href="/" className="button is-small is-rounded is-light">Back to home</Link>
+                            <a href="#top" className="button is-small is-light">Back to top</a>
                         </div>
                     </div>
                 </div>
