@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import { NavDocs } from "@/components/Nav";
 import { DocsContent } from "@/components/Docs";
 import DocsSidebar from "@/components/DocsSidebar";
-import Link from "next/link";
 
 export default function DocsPage({ children }: { children: ReactNode }) {
     return (

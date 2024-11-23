@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import Nav from "@/components/Nav";
+import HomeNav from "@/components/Nav";
 import Code from "@/components/Code";
 import Image from "next/image"
 import { Kw, Op, N } from "@/components/Code";
@@ -7,11 +7,9 @@ import { Kw, Op, N } from "@/components/Code";
 export default function Home() {
     return (
         <>
-            <header className="hero">
+            <header className="hero is-black">
                 <div className="hero-head">
-                    <Nav>
-                        <a className="navbar-item" href="/docs">Documentation</a>
-                    </Nav>
+                    <HomeNav />
                 </div>
                 <div className="hero-body">
                     <div className="container">
@@ -20,7 +18,7 @@ export default function Home() {
                             <div className="column is-half">
                                 <div className="columns is-centered is-multiline">
                                     <div className="column is-full">
-                                        <Image alt="logo" width={300} height={300} src="/logo.svg" />
+                                        <Image alt="logo" width={300} height={300} src="/img/pile/logo.svg" />
                                     </div>
                                     <div className="column is-full">
                                         <p className="is-italic is-size-4">
