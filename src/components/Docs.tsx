@@ -39,3 +39,9 @@ export function Title3({ children }: { children: ReactNode }) {
         <h3 className="title is-4 is-size-6-mobile">{children}</h3>
     )
 }
+
+export function Highlighted({ children }: { children: ReactNode }) {
+    return (
+        <h3 className="has-text-justified has-text-weight-bold is-italic is-size-5 is-size-6-mobile">{children}</h3>
+    )
+}
