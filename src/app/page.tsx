@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import HomeNav from "@/components/Nav";
 import Code from "@/components/Code";
 import Image from "next/image"
-import { Kw, Op, N } from "@/components/Code";
+import { Kw, Op, B, N } from "@/components/Code";
 
 export default function Home() {
     return (
@@ -43,7 +43,7 @@ export default function Home() {
                                                 <N x="  0 1" /><br />
                                                 <Kw x="  loop" /><br />
                                                 <Op x="    dup" /> N <Op x=">=" /> <Kw x="if" /><br />
-                                                <Op x="      dup println" /><br />
+                                                <Op x="      dup" /> <B x="println" /><br />
                                                 <Op x="      over over +" /><br />
                                                 <Kw x="    else stop end" /><br />
                                                 <Kw x="  end" /><br />

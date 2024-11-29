@@ -25,3 +25,7 @@ export function S({ x }: { x: string }) {
 export function C({ x }: { x: string }) {
     return <span className="c">{x}</span>
 }
+
+export function B({ x }: { x: string }) {
+    return <span className="b">{x}</span>
+}
