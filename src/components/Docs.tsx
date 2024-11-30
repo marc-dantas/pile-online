@@ -45,3 +45,9 @@ export function Highlighted({ children }: { children: ReactNode }) {
         <h3 className="has-text-justified has-text-weight-bold is-italic is-size-5 is-size-6-mobile">{children}</h3>
     )
 }
+
+export function Table({ children }: { children: ReactNode }) {
+    return (
+        <table className="table is-fullwidth is-striped is-bordered">{children}</table>
+    )
+}
