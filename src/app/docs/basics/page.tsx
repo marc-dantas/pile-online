@@ -11,7 +11,7 @@ export default function Docs() {
             <Subtitle>This topic is meant to demonstrate the basics</Subtitle>
             <Title2>Simple tutorial</Title2>
             <P>
-                Let's start with a simple demonstration of how Pile works. Each number or string 
+                Let&apos;s start with a simple demonstration of how Pile works. Each number or string 
                 you type is automatically pushed onto the stack. From there, you can perform operations.
             </P>
             <Code>
@@ -25,7 +25,7 @@ export default function Docs() {
             </Code>
             <P>
                 Pile operates with a single stack, so everything you do affects the same stack. 
-                Here's a demonstration of how stack manipulation works:
+                Here&apos;s a demonstration of how stack manipulation works:
             </P>
             <Code>
                 <C x="# Stack manipulation example" /><br />
@@ -61,7 +61,7 @@ export default function Docs() {
 
             <Title2>Control flow</Title2>
             <P>
-                Pile uses simple keywords like <code>if</code>, <code>else</code>, and <code>end</code> to handle conditional logic. Here's a small example:
+                Pile uses simple keywords like <code>if</code>, <code>else</code>, and <code>end</code> to handle conditional logic. Here&apos;s a small example:
             </P>
             <Code>
                 <C x="# Conditional example" /><br />
@@ -90,7 +90,7 @@ export default function Docs() {
                 <C x="# Output: Hello, Pile!" /><br />
             </Code>
             <P>
-                This code defines a procedure <code>say_hello</code> that prints <code>"Hello, Pile!"</code>. When 
+                This code defines a procedure <code>say_hello</code> that prints <code>&quot;Hello, Pile!&quot;</code>. When 
                 the procedure is called, the stack remains consistent.
             </P>
 
