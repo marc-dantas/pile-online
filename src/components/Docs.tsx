@@ -28,6 +28,12 @@ export function P({ children }: { children: ReactNode }) {
     )
 }
 
+export function Text({ children }: { children: ReactNode }) {
+    return (
+        <div className="has-text-justified has-text-left-mobile is-size-5">{children}</div>
+    )
+}
+
 export function Title2({ children }: { children: ReactNode }) {
     return (
         <h2 className="title is-3 is-size-5-mobile">{children}</h2>

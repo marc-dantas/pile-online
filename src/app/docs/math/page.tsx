@@ -1,5 +1,5 @@
 import DocsPage from "@/components/DocsPage";
-import { Title, Subtitle, Title2, Table, P } from "@/components/Docs";
+import { Title, Subtitle, Title2, Table, P, Text } from "@/components/Docs";
 import Code from "@/components/Code";
 // Code highlighting components
 import { C, Kw, Op, S, N, B } from "@/components/Code";
@@ -71,6 +71,13 @@ export default function Docs() {
                 <C x="# - Divides 500 by 2 (result: 250)" /><br />
                 <C x="# - Adds 1 to the result (final result: 251)" /><br />
             </Code>
+            <Title2>Possible Errors</Title2>
+            <Text>
+                <ul>
+                    <li><a href="/docs/error#stackunderflow">Stack Underflow</a></li>
+                    <li><a href="/docs/error#unexpectedtype">Unexpected Type</a></li>
+                </ul>
+            </Text>
         </DocsPage>
     );
 }
