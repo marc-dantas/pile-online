@@ -7,7 +7,7 @@ import DocsSidebar from "@/components/DocsSidebar";
 export default function DocsPage({ children }: { children: ReactNode }) {
     return (
         <>
-            <header className="hero is-medium">
+            <header className="hero" id="top">
                 <div className="hero-head">
                     <NavDocs />
                 </div>

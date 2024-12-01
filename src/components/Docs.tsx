@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 export function DocsContent({ children }: { children: ReactNode }) {
     return (
-        <div id="top" className="box">
+        <div className="box">
             <div className="content">
                 {children}
             </div>
