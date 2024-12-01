@@ -48,23 +48,21 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                             </SidebarGroup>
                         </li>
                         <li>
-                            <SidebarGroup is_grouped title="Structures">
-                                <li>
-                                    <a href="/docs/controlflow" className={isActive("/docs/controlflow")}>Control flow</a>
-                                </li>
-                                <li>
-                                    <a href="/docs/procs" className={isActive("/docs/procs")}>Procedures</a>
-                                </li>
-                                <li>
-                                    <a href="/docs/defs" className={isActive("/docs/defs")}>Definitions</a>
-                                </li>
-                            </SidebarGroup>
-                        </li>
-                        <li>
                             <a href="/docs/error" className={isActive("/docs/error")}>Errors</a>
                         </li>
                         <li>
                             <a href="/docs/builtins" className={isActive("/docs/builtins")}>Builtins</a>
+                        </li>
+                    </SidebarGroup>
+                    <SidebarGroup title="Structures">
+                        <li>
+                            <a href="/docs/controlflow" className={isActive("/docs/controlflow")}>Control flow</a>
+                        </li>
+                        <li>
+                            <a href="/docs/procs" className={isActive("/docs/procs")}>Procedures</a>
+                        </li>
+                        <li>
+                            <a href="/docs/defs" className={isActive("/docs/defs")}>Definitions</a>
                         </li>
                     </SidebarGroup>
                     <SidebarGroup title="Other">
