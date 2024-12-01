@@ -30,38 +30,44 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                             <a href="/docs/basics" className={isActive("/docs/basics")}>Basics</a>
                         </li>
                     </SidebarGroup>
-                    <SidebarGroup title="Operations">
+                    <SidebarGroup title="Reference">
                         <li>
-                            <a href="/docs/math" className={isActive("/docs/math")}>Mathematical operations</a>
+                            <SidebarGroup is_grouped={true} title="Operations">
+                                <li>
+                                    <a href="/docs/math" className={isActive("/docs/math")}>Mathematical operations</a>
+                                </li>
+                                <li>
+                                    <a href="/docs/logic" className={isActive("/docs/logic")}>Logical operations</a>
+                                </li>
+                                <li>
+                                    <a href="/docs/bitwise" className={isActive("/docs/bitwise")}>Bitwise operations</a>
+                                </li>
+                                <li>
+                                    <a href="/docs/stack" className={isActive("/docs/stack")}>Stack manipulation operations</a>
+                                </li>
+                            </SidebarGroup>
                         </li>
                         <li>
-                            <a href="/docs/logic" className={isActive("/docs/logic")}>Logical operations</a>
+                            <SidebarGroup is_grouped title="Structures">
+                                <li>
+                                    <a href="/docs/controlflow" className={isActive("/docs/controlflow")}>Control flow</a>
+                                </li>
+                                <li>
+                                    <a href="/docs/procs" className={isActive("/docs/procs")}>Procedures</a>
+                                </li>
+                                <li>
+                                    <a href="/docs/defs" className={isActive("/docs/defs")}>Definitions</a>
+                                </li>
+                            </SidebarGroup>
                         </li>
-                        <li>
-                            <a href="/docs/bitwise" className={isActive("/docs/bitwise")}>Bitwise operations</a>
-                        </li>
-                        <li>
-                            <a href="/docs/stack" className={isActive("/docs/stack")}>Stack manipulation operations</a>
-                        </li>
-                    </SidebarGroup>
-                    <SidebarGroup title="Pile Structures">
-                        <li>
-                            <a href="/docs/controlflow" className={isActive("/docs/controlflow")}>Control flow</a>
-                        </li>
-                        <li>
-                            <a href="/docs/procs" className={isActive("/docs/procs")}>Procedures</a>
-                        </li>
-                        <li>
-                            <a href="/docs/defs" className={isActive("/docs/defs")}>Definitions</a>
-                        </li>
-                    </SidebarGroup>
-                    <SidebarGroup title="Other">
                         <li>
                             <a href="/docs/error" className={isActive("/docs/error")}>Errors</a>
                         </li>
                         <li>
                             <a href="/docs/builtins" className={isActive("/docs/builtins")}>Builtins</a>
                         </li>
+                    </SidebarGroup>
+                    <SidebarGroup title="Other">
                         <li>
                             <a href="/docs/io" className={isActive("/docs/io")}>I/O</a>
                         </li>
