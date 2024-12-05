@@ -10,9 +10,9 @@ export function DocsContent({ children }: { children: ReactNode }) {
     )
 }
 
-export function Title({ children }: { children: ReactNode }) {
+export function Title({ id, children }: { id?: string, children: ReactNode }) {
     return (
-        <h1 className="title is-1 is-size-4-mobile">{children}</h1>
+        <h1 id={id} className="title is-1 is-size-4-mobile">{children}</h1>
     )
 }
 
@@ -34,15 +34,21 @@ export function Text({ children }: { children: ReactNode }) {
     )
 }
 
-export function Title2({ children }: { children: ReactNode }) {
+export function Title2({ id, children }: { id?: string, children: ReactNode }) {
     return (
-        <h2 className="title is-3 is-size-5-mobile">{children}</h2>
+        <h2 id={id} className="title is-3 is-size-5-mobile">{children}</h2>
     )
 }
 
-export function Title3({ children }: { children: ReactNode }) {
+export function Title3({ id, children }: { id?: string, children: ReactNode }) {
     return (
-        <h3 className="title is-4 is-size-6-mobile">{children}</h3>
+        <h3 id={id} className="title is-4 is-size-6-mobile">{children}</h3>
+    )
+}
+
+export function Title4({ id, children }: { id?: string, children: ReactNode }) {
+    return (
+        <h4 id={id} className="title is-5 is-size-6-mobile">{children}</h4>
     )
 }
 

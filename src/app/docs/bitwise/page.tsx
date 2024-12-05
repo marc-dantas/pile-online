@@ -2,7 +2,7 @@ import DocsPage from "@/components/DocsPage";
 import { Title, Subtitle, Title2, Table, P, Text } from "@/components/Docs";
 import Code from "@/components/Code";
 // Code highlighting components
-import { C, Kw, Op, S, N, B } from "@/components/Code";
+import { C, Op, N } from "@/components/Code";
 
 export default function Docs() {
     return (
