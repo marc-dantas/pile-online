@@ -42,6 +42,7 @@ export default function Docs() {
                 <B x="println" />
             </Code>
             <P>Output:</P>
+            
             <Code>
                 <span>pile: error at .\test.pile:1:3:</span><br />
                 <span>    |    token error:</span><br />
@@ -181,9 +182,8 @@ export default function Docs() {
             <Code>
                 <span>pile: error at .\test.pile:1:10:</span><br />
                 <span>    |    runtime error:</span><br />
-                <span>    |        operation `=` expects (number, number) or (string,</span><br />
-                <span>    |        string) datatype(s) on the stack to work, but got</span><br />
-                <span>    |        (string, number).</span><br />
+                <span>    |        operation `=` expects numbers or strings datatype(s)</span><br />
+                <span>    |        on the stack to work, but got (number, string).</span><br />
                 <span>    +    try checking the values before the operation.</span><br />
             </Code>
             <Title4 id="invalidword">Invalid Word</Title4>
