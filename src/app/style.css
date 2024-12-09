@@ -9,8 +9,13 @@
     height: 100%;
 }
 
+.card {
+    height: 100%;
+}
+
 .has-logo-font {
     font-family: 'Roboto Mono', monospace;
+    letter-spacing: -1px;
 }
 
 .has-text-huge {
