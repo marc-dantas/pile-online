@@ -1,58 +1,72 @@
 import DocsPage from "@/components/DocsPage";
-import { Title, Subtitle, Title3, P, Title2 } from "@/components/Docs";
+import { Title, Subtitle, P, Title2 } from "@/components/Docs";
 import Code from "@/components/Code";
-// Code highlighting components
-import { C, Op, B, N, Kw } from "@/components/Code";
+import { C, Op, N, Kw, B } from "@/components/Code"; // Import B for built-ins
 
 export default function Docs() {
     return (
         <DocsPage>
-            <Title>Control flow</Title>
-            <Subtitle>This topic is meant to document control flow</Subtitle>
-            <Title2>Simple <code>if</code> statement</Title2>
-            <P>The simple <code>if</code> statement checks the last element on the stack.</P>
-            <P><strong>If</strong> this value (<code>&lt;CONDITION&gt;</code>) is evaluated as a <i>truthy</i> condition. The interpreter executes the block inside (<code>&lt;CODE&gt;</code>).</P>
+            <Title>Control Flow</Title>
+            <Subtitle>This topic documents control flow structures in the language.</Subtitle>
+
+            <Title2>Simple <code>if</code> Statement</Title2>
+            <P>The simple <code>if</code> statement checks the top element on the stack. If this value (<code>&lt;CONDITION&gt;</code>) is <i>truthy</i> (non-zero), the interpreter executes the block inside (<code>&lt;CODE&gt;</code>).</P>
             <P>Syntax:</P>
             <Code>
                 &lt;CONDITION&gt; <Kw x="if"/><br />
                 <span>  &lt;CODE&gt;</span><br />
-                <Kw x="end" /><br />
+                <Kw x="end" />
             </Code>
-            <Title2>Compound <code>if</code> statement</Title2>
-            <P>The compound <code>if</code> statement checks the last element on the stack.</P>
-            <P><strong>If</strong> this value (<code>&lt;CONDITION&gt;</code>) is evaluated as a <i>truthy</i> condition. The interpreter executes the block inside (<code>&lt;CODE&gt;</code>).</P>
-            <P><strong>Otherwise</strong>, the interpreter executes the block after <code>else</code> instead (<code>&lt;OTHERWISE&gt;</code>).</P>
+            <P>Example:</P>
+            <Code>
+                <N x="1" /> <Kw x="if" /><br />
+                <B x="  println" /> <N x="10" /><br />
+                <Kw x="end" /><br />
+                <N x="0" /> <Kw x="if" /><br />
+                <B x="  println" /> <N x="20" /><br />
+                <Kw x="end" />
+            </Code>
+            <P>In this example, only 10 will be printed, as 1 is truthy and 0 is falsy.</P>
+
+            <Title2>Compound <code>if</code> Statement</Title2>
+            <P>The compound <code>if</code> statement checks the top element on the stack. If this value (<code>&lt;CONDITION&gt;</code>) is <i>truthy</i>, the interpreter executes the block inside (<code>&lt;CODE&gt;</code>). Otherwise, the interpreter executes the block after <code>else</code> (<code>&lt;OTHERWISE&gt;</code>).</P>
             <P>Syntax:</P>
             <Code>
-                &lt;CONDITION&gt; <Kw x="if"/><br />
+                <>&lt;CONDITION&gt; <Kw x="if"/><br />
                 <span>  &lt;CODE&gt;</span><br />
                 <Kw x="else" /><br />
                 <span>  &lt;OTHERWISE&gt;</span><br />
-                <Kw x="end" /><br />
+                <Kw x="end" /></>
             </Code>
-            <Title2>The <code>loop</code> statement</Title2>
-            <P>The <code>loop</code> statement repeats its block of code (<code>&lt;CODE&gt;</code>) indefinitely or until the interpreter finds a <code>stop</code> keyword.</P>
+            <P>Example:</P>
+            <Code>
+                <N x="0" /> <Kw x="if" /><br />
+                <B x="  println" /> <N x="10" /><br />
+                <Kw x="else" /><br />
+                <B x="  println" /> <N x="20" /><br />
+                <Kw x="end" />
+            </Code>
+            <P>In this example, "20" will be printed because the condition is 0 (falsy).</P>
+
+            <Title2>Loops (<code>loop</code>)</Title2>
+            <P>The <code>loop</code> keyword creates an infinite loop. Use <code>stop</code> to exit the loop.</P>
             <P>Syntax:</P>
             <Code>
-                <Kw x="loop"/><br />
+                <Kw x="loop" /><br />
                 <span>  &lt;CODE&gt;</span><br />
-                <Kw x="end" /><br />
+                <Kw x="end" />
             </Code>
+            <P>Example with <code>if</code> and <code>stop</code>:</P>
             <Code>
-                <Kw x="loop"/><br />
-                <span>  &lt;CODE&gt;</span><br />
-                <Kw x="  stop" /> <C x="# optional" /><br />
-                <Kw x="end" /><br />
-            </Code>
-            <Title2>Code examples</Title2>
-            <P>Counting to 10:</P>
-            <Code>
-                <N x="0" /> <Kw x="loop"/><br />
-                <Op x="  dup" /> <B x="println"/><br />
-                <Op x="  dup" /> <N x="10" /> <Op x="=" /> <Kw x="if stop end" /><br />
+                <N x="0" /> <Kw x="loop" /><br />
+                <Op x="  dup" /> <B x="println" /><br />
+                <Op x="  dup" /> <N x="10" /> <Op x="=" /> <Kw x="if" /><br />
+                <Kw x="    stop" /><br />
+                <Kw x="  end" /><br />
                 <N x="  1" /> <Op x="+"/><br />
-                <Kw x="end" /><br />
+                <Kw x="end" />
             </Code>
+            <P>This will print 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10 and then exit the loop.</P>
         </DocsPage>
     )
 }
