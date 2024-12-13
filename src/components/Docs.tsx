@@ -30,7 +30,7 @@ export function P({ children }: { children: ReactNode }) {
 
 export function Text({ children }: { children: ReactNode }) {
     return (
-        <div className="has-text-justified has-text-left-mobile is-size-5">{children}</div>
+        <div className="content has-text-justified has-text-left-mobile is-size-5">{children}</div>
     )
 }
 
