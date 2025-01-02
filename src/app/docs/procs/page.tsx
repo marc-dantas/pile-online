@@ -2,7 +2,7 @@ import DocsPage from "@/components/DocsPage";
 import { Title, Subtitle, Title2, Text, P } from "@/components/Docs";
 import Code from "@/components/Code";
 // Code highlighting components
-import { Kw, N, Op, B, C } from "@/components/Code";
+import { Kw, N, Op, B, C, S } from "@/components/Code";
 
 export default function Docs() {
     return (
@@ -10,37 +10,22 @@ export default function Docs() {
             <Title>Procedures</Title>
             <Subtitle>This topic is meant to document procedures in Pile</Subtitle>
 
-            <Title2>What is a procedure?</Title2>
-            <P>
-                In Pile, a <strong>procedure</strong> is a reusable block of code that is executed when it is <strong>called</strong>. 
-                Unlike conventional programming languages where parameters are passed explicitly, and return values are common, procedures 
-                in Pile interact solely through the stack.
-            </P>
-            <P>
-                Procedures in Pile are stack-based by design. This means that:
-            </P>
+            <Title2>Overview</Title2>
+            
+            <P>In the Pile programming language, a procedure is a reusable block of code designed to perform specific tasks. Unlike traditional functions in other languages, procedures in Pile:</P>
+
             <Text>
                 <ul>
-                    <li>
-                        Parameters are implicitly <strong>pushed</strong> onto the stack before the procedure is called.
-                    </li>
-                    <li>
-                        The procedure <strong>modifies</strong> the stack directly—either by consuming values, producing new ones, or both.
-                    </li>
-                    <li>
-                        There is no concept of explicit return values; instead, the stack holds the results after the procedure completes.
-                    </li>
+                    <li>Do not have named arguments: Data is passed and manipulated solely via the stack.</li>
+                    <li>Do not return values: The stack holds all the intermediate and final results of the operations performed.</li>
+                    <li>Procedures are a key part of writing modular and maintainable code in Pile, allowing you to define, organize, and reuse blocks of code.</li>
                 </ul>
             </Text>
             
-            <P>
-                This makes procedures in Pile behave like isolated transformations of the stack, providing a flexible and consistent 
-                mechanism for code execution.
-            </P>
+            <Title2>Defining a Procedure</Title2>
 
-            <Title2>Usage</Title2>
-            <P>To define a procedure, use the <code>proc</code> keyword followed by the procedure name. The procedure ends with the <code>end</code> keyword.</P>
-            <P>To call a procedure, simply use its name in the code. Ensure the required stack values are present before the call.</P>
+            <P>To define a procedure in Pile, use the <code>proc</code> keyword followed by the name of the procedure and the <code>end</code> keyword to mark the end of the procedure.</P>
+
             <P>Syntax:</P>
             <Code>
                 <Kw x="proc" /> &lt;NAME&gt;<br />
@@ -67,6 +52,20 @@ export default function Docs() {
                 <br />
                 <N x="8" /> square <B x="println" /><br />
                 <C x="# Output: 64" /><br />
+            </Code>
+            
+            <P>This procedure is meant to check if a given number is even or odd:</P>
+            <Code>
+                <Kw x="proc" /> even_odd<br />
+                <N x="  2" /> <Op x="swap %" /> <N x="0" /> <Op x="=" /> <Kw x="if" /><br />
+                    <S x='    "Even"' /> <B x="println" /><br />
+                <Kw x="  else" /><br />
+                    <S x='    "Odd"' /> <B x="println" /><br />
+                <Kw x="  end" /><br />
+                <Kw x="end" /><br />
+                <br />
+                <N x="4" /> even_odd <C x="# Output: Even" /><br />
+                <N x="7" /> even_odd <C x="# Output: Odd" /><br />
             </Code>
 
             <P>Notice how the parameters (values on the stack) are manipulated within the procedure and the results remain on the stack after execution.</P>
