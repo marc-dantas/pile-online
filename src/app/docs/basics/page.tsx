@@ -36,10 +36,10 @@ export default function Docs() {
                 <Op x="drop" /><br />
                 <C x="# Removes the top value: 20" /><br />
             </Code>
-            <P>Use <code>dump</code> operation to write to the terminal the last item on top of the stack. Use <code>println</code> to print to stdout the last string on top of the stack (if it is a number, converts it to a string)</P>
+            <P>Use <code>trace</code> operation to write to the terminal the last item on top of the stack. Use <code>println</code> to print to stdout the last string on top of the stack (if it is a number, converts it to a string)</P>
             <Code>
-                <C x="# Use dump as a debugging operation" /><br />
-                <N x="99" /> <Op x="dump" /><br />
+                <C x="# Use trace as a debugging operation" /><br />
+                <N x="99" /> <Op x="trace" /><br />
                 <br />
                 <C x="# Use println to print messages like Hello World" /><br />
                 <S x='"Hello World"' /> <B x="println" /><br />
@@ -66,9 +66,9 @@ export default function Docs() {
             <Code>
                 <C x="# Conditional example" /><br />
                 <N x="5" /> <N x="5" /> <Op x="=" /> <Kw x="if" /><br />
-                <S x='  "Equal"' /> <Op x="dump" /><br />
+                <S x='  "Equal"' /> <Op x="trace" /><br />
                 <Kw x="else" /> <C x="# This is optional" /><br />
-                <S x='  "Not equal"' /> <Op x="dump" /><br />
+                <S x='  "Not equal"' /> <Op x="trace" /><br />
                 <Kw x="end" /><br />
                 <br />
                 <C x="# Output: Equal" /><br />

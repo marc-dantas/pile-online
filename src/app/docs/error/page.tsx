@@ -157,7 +157,7 @@ export default function Docs() {
             <P>Stack Underflow is thrown when the interpreter tries to execute an operation but the stack doesn&apos;t contain enough values on top for the operation.</P>
             <P>Here&apos;s a simple code example:</P>
             <Code>
-                <N x="1 2 3"/> <Op x="+ + + dump"/><br />
+                <N x="1 2 3"/> <Op x="+ + + trace"/><br />
                 <C x="#         ^ this operation only gets 6, there&apos;s no second value :\" /><br />
             </Code>
             <P>Output:</P>

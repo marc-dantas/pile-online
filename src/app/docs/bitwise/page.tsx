@@ -35,7 +35,7 @@ export default function Docs() {
                     </tr>
                     <tr>
                         <td>NOT</td>
-                        <td><code>!</code></td>
+                        <td><code>~</code></td>
                         <td>
                             Pops the top number from the stack and pushes its bitwise NOT.
                         </td>
@@ -70,7 +70,7 @@ export default function Docs() {
                 <N x="4" /> <N x="1" /> <Op x="|" /> <C x="# The stack now contains: 5" /><br />
                 <br />
                 <C x="# Performing a bitwise NOT" /><br />
-                <N x="5" /> <Op x="!" /> <C x="# The stack now contains: -6 (two's complement)" /><br />
+                <N x="5" /> <Op x="~" /> <C x="# The stack now contains: -6 (two's complement)" /><br />
                 <br />
                 <C x="# Shifting bits left" /><br />
                 <C x="# Remember about LIFO, the order is reversed, it is 3 << 2 and not 2 << 3" /><br />

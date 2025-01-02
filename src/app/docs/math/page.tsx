@@ -43,9 +43,14 @@ export default function Docs() {
                         <td>Pops the last 2 items from the stack and pushes their quotient.</td>
                     </tr>
                     <tr>
-                        <td colSpan={4} className="has-text-centered">
-                            <em>More operations coming soon!</em>
-                        </td>
+                        <td>Modulo</td>
+                        <td><code>%</code></td>
+                        <td>Pops the last 2 items from the stack and pushes their modulo.</td>
+                    </tr>
+                    <tr>
+                        <td>Exponent</td>
+                        <td><code>**</code></td>
+                        <td>Pops the last 2 items from the stack and exponentiates the numbers.</td>
                     </tr>
                 </tbody>
             </Table>

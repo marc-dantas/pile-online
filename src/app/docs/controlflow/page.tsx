@@ -20,10 +20,10 @@ export default function Docs() {
             <P>Example:</P>
             <Code>
                 <N x="1" /> <Kw x="if" /><br />
-                <B x="  println" /> <N x="10" /><br />
+                <N x="  10" /> <B x="println" /><br />
                 <Kw x="end" /><br />
                 <N x="0" /> <Kw x="if" /><br />
-                <B x="  println" /> <N x="20" /><br />
+                <N x="  20" /> <B x="println" /><br />
                 <Kw x="end" />
             </Code>
             <P>In this example, only 10 will be printed, as 1 is truthy and 0 is falsy.</P>
@@ -40,10 +40,10 @@ export default function Docs() {
             </Code>
             <P>Example:</P>
             <Code>
-                <N x="0" /> <Kw x="if" /><br />
-                <B x="  println" /> <N x="10" /><br />
+                <N x="0" /> <Kw x="if" /><br />                
+                <N x="  10" /> <B x="println" /><br />
                 <Kw x="else" /><br />
-                <B x="  println" /> <N x="20" /><br />
+                <N x="  20" /> <B x="println" /><br />
                 <Kw x="end" />
             </Code>
             <P>In this example, "20" will be printed because the condition is 0 (falsy).</P>
