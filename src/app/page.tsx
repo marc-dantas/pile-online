@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import HomeNav from "@/components/Nav";
 import Code from "@/components/Code";
 import Image from "next/image"
+import Icon from "@/components/Icon";
 import { Kw, Op, B, N } from "@/components/Code";
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
                                     </div>
                                     <div className="column is-full">
                                         <p className="is-italic is-size-4">
-                                            An educational stack-based programming language designed to simplify learning in programming logic, stack-based structures, and core computer science principles.
+                                            A concatenative and stack-based programming language designed to teach and explore the fundamentals of stack-oriented computation.
                                         </p>
                                     </div>
                                     <div className="column is-narrow">
@@ -70,27 +71,48 @@ export default function Home() {
                             <h2 className="title has-logo-font has-text-centered has-text-weight-bold">Learn More</h2>
                             <div className="columns is-multiline">
                                 <div className="column is-full">
-                                    <div className="tile is-child box p-6">
-                                        <p className="title is-5 has-text-centered">Bridging the Gap</p>
-                                        <p className="is-size-5">
-                                            Pile is a comprehensive educational tool designed to bridge the gap between novice programmers and one of the most feared foundational computer science concepts.
-                                        </p>
+                                    <div className="box p-6">
+                                        <div className="columns">
+                                            <div className="column is-narrow is-hidden-mobile">
+                                                <Icon source="/icons/check.svg" />
+                                            </div>
+                                            <div className="column">
+                                                <p className="title is-4 has-text-centered">Bridging the Gap</p>
+                                                <p className="is-size-4">
+                                                    Pile is a comprehensive educational tool designed to bridge the gap between novice programmers and one of the most feared foundational computer science concepts.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="column is-full">
-                                    <div className="tile is-child box p-6">
-                                        <p className="title is-5 has-text-centered">Understanding Stack-Based Programming</p>
-                                        <p className="is-size-5">
-                                            With a focus on stack-based programming, Pile empowers learners to visualize how data is manipulated, fostering a deeper understanding of algorithms and data structures.
-                                        </p>
+                                    <div className="box p-6">
+                                        <div className="columns">
+                                            <div className="column is-narrow is-hidden-mobile">
+                                                <Icon source="/icons/stack.svg" />
+                                            </div>
+                                            <div className="column">
+                                                <p className="title is-4 has-text-centered">Understanding Stack-Based Programming</p>
+                                                <p className="is-size-4">
+                                                    With a focus on stack-based programming, Pile empowers learners to visualize how data is manipulated, fostering a deeper understanding of algorithms and data structures.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="column is-full">
-                                    <div className="tile is-child box p-6">
-                                        <p className="title is-5 has-text-centered">A Supportive Learning Environment</p>
-                                        <p className="is-size-5">
-                                            Our goal is to create a supportive environment where users can experiment, learn, and grow in their programming journey without the intimidation often associated with coding.
-                                        </p>
+                                    <div className="box p-6">
+                                        <div className="columns">
+                                            <div className="column is-narrow is-hidden-mobile">
+                                                <Icon source="/icons/book.svg" />
+                                            </div>
+                                            <div className="column">
+                                                <p className="title is-4 has-text-centered">A Supportive Learning Environment</p>
+                                                <p className="is-size-4">
+                                                    Our goal is to create a supportive environment where users can experiment, learn, and grow in their programming journey without the intimidation often associated with coding.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
