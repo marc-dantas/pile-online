@@ -45,6 +45,9 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                                 <li>
                                     <a href="/docs/stack" className={isActive("/docs/stack")}>Stack manipulation operations</a>
                                 </li>
+                                <li>
+                                    <a href="/docs/trace" className={isActive("/docs/trace")}>The trace operation</a>
+                                </li>
                             </SidebarGroup>
                         </li>
                         <li>
