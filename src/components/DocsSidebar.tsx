@@ -51,10 +51,13 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                             </SidebarGroup>
                         </li>
                         <li>
-                            <a href="/docs/error" className={isActive("/docs/error")}>Errors</a>
+                            <a href="/docs/datatypes" className={isActive("/docs/datatypes")}>Datatypes</a>
                         </li>
                         <li>
                             <a href="/docs/builtins" className={isActive("/docs/builtins")}>Builtins</a>
+                        </li>
+                        <li>
+                            <a href="/docs/error" className={isActive("/docs/error")}>Errors</a>
                         </li>
                     </SidebarGroup>
                     <SidebarGroup title="Structures">
