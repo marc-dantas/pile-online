@@ -23,7 +23,7 @@ export default function Docs() {
                         <td>Equals</td>
                         <td><code>=</code></td>
                         <td>
-                            Pops the last 2 items from the stack and pushes <code>1</code> if they are equal, or <code>0</code> otherwise. Works with both 
+                            Pops the last 2 items from the stack and pushes <code>true</code> if they are equal, or <code>false</code> otherwise. Works with both 
                             numbers and strings.
                         </td>
                     </tr>
@@ -31,36 +31,43 @@ export default function Docs() {
                         <td>Less Than</td>
                         <td><code>&lt;</code></td>
                         <td>
-                            Pops the last 2 numbers from the stack and pushes <code>1</code> if the first is less than the second, or <code>0</code> otherwise.
+                            Pops the last 2 numbers from the stack and pushes <code>true</code> if the first is less than the second, or <code>false</code> otherwise.
                         </td>
                     </tr>
                     <tr>
                         <td>Greater Than</td>
                         <td><code>&gt;</code></td>
                         <td>
-                            Pops the last 2 numbers from the stack and pushes <code>1</code> if the first is greater than the second, or <code>0</code> otherwise.
+                            Pops the last 2 numbers from the stack and pushes <code>true</code> if the first is greater than the second, or <code>false</code> otherwise.
                         </td>
                     </tr>
                     <tr>
                         <td>Greater Than or Equal To</td>
                         <td><code>&gt;=</code></td>
                         <td>
-                            Pops the last 2 numbers from the stack and pushes <code>1</code> if the first is greater than or equal to the second, or <code>0</code> otherwise.
+                            Pops the last 2 numbers from the stack and pushes <code>true</code> if the first is greater than or equal to the second, or <code>false</code> otherwise.
                         </td>
                     </tr>
                     <tr>
                         <td>Less Than or Equal To</td>
                         <td><code>&lt;=</code></td>
                         <td>
-                            Pops the last 2 numbers from the stack and pushes <code>1</code> if the first is less than or equal to the second, or <code>0</code> otherwise.
+                            Pops the last 2 numbers from the stack and pushes <code>true</code> if the first is less than or equal to the second, or <code>false</code> otherwise.
                         </td>
                     </tr>
                     <tr>
                         <td>Not Equals</td>
                         <td><code>!=</code></td>
                         <td>
-                            Pops the last 2 items from the stack and pushes <code>1</code> if they are not equal, or <code>0</code> otherwise. Works with both 
+                            Pops the last 2 items from the stack and pushes <code>true</code> if they are not equal, or <code>false</code> otherwise. Works with both 
                             numbers and strings.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Is Nil</td>
+                        <td><code>?</code></td>
+                        <td>
+                            Pops the last item on the stack and pushes <code>true</code> if the item in question is <code>nil</code>, otherwise <code>false</code>.
                         </td>
                     </tr>
                 </tbody>

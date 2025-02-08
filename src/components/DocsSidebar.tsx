@@ -71,14 +71,6 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                             <a href="/docs/defs" className={isActive("/docs/defs")}>Definitions</a>
                         </li>
                     </SidebarGroup>
-                    <SidebarGroup title="Other">
-                        <li>
-                            <a href="/docs/io" className={isActive("/docs/io")}>I/O</a>
-                        </li>
-                        <li>
-                            <a href="/docs/examples" className={isActive("/docs/examples")}>Code examples</a>
-                        </li>
-                    </SidebarGroup>
                 </Sidebar>
             </div>
             <div className="column">
