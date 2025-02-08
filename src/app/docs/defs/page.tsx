@@ -13,7 +13,7 @@ export default function Docs() {
 
             <P>In the Pile programming language, a definition is a constant value bound to a name which is computed at the time of its creation.</P>
 
-            <Title2>Defining a Procedure</Title2>
+            <Title2>Creating a Definition</Title2>
 
             <P>To create a definition in Pile, use the <code>def</code> keyword followed by the name of the definition and <code>end</code> keyword to mark the end of the definition.</P>
 
