@@ -7,7 +7,7 @@ export default function Docs() {
             <Title>Builtins</Title>
             <Subtitle>This topic is meant to document builtins in Pile</Subtitle>
             <Title2>What is a builtin?</Title2>
-            <P>A builtin is an operation that is built into Pile's interpreter. Builtins can have various use cases and help the developer to create programs with basic features.</P>
+            <P>A builtin is an operation that is built into Pile&apos;s interpreter. Builtins can have various use cases and help the developer to create programs with basic features.</P>
             <Title2>Builtins</Title2>
             <Table>
                 <thead className="has-text-weight-bold">

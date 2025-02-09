@@ -134,7 +134,7 @@ export default function Home() {
                                     <div className="card">
                                         <div className="card-content">
                                             <p className="title is-4 has-logo-font">Educational Goals</p>
-                                            <p>Pile is crafted as a "teacher" for computer science students, always aiming to be concise, promoting algorithmic and logical thinking.</p>
+                                            <p>Pile is crafted as a &quot;teacher&quot; for computer science students, always aiming to be concise, promoting algorithmic and logical thinking.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@ export default function Home() {
                                 <div className="columns is-multiline is-centered">
                                     <div className="column content is-full">
                                         <h4 className="title is-4">Why learn Pile?</h4>
-                                        <p className="is-size-4">Whether you're a beginner or an experienced developer looking to explore a fresh approach to coding, Pile can still be an amazing tool for teachers, students and even mathematicians.</p>
+                                        <p className="is-size-4">Whether you&apos;re a beginner or an experienced developer looking to explore a fresh approach to coding, Pile can still be an amazing tool for teachers, students and even mathematicians.</p>
                                         <p className="is-size-4">With a comprehensive and small documentation, you can learn Pile in a few hours and start learning even more!</p>
                                         <h4 className="title is-4">What is in the documentation?</h4>
                                         <ul className="is-size-4">
@@ -205,7 +205,7 @@ export default function Home() {
                                 <div className="columns is-multiline is-centered">
                                     <div className="column is-full">
                                         <h4 className="title is-4">Contributing to Pile&apos;s implementation</h4>
-                                        <p className="is-size-4">Visit the official GitHub repository to explore in-depth examples, access the full source code, and contribute directly to this innovative, stack-based language. Whether you're refining existing features, adding new ones, or simply learning, your contributions are invaluable to shaping Pile&apos;s future.</p>
+                                        <p className="is-size-4">Visit the official GitHub repository to explore in-depth examples, access the full source code, and contribute directly to this innovative, stack-based language. Whether you&apos;re refining existing features, adding new ones, or simply learning, your contributions are invaluable to shaping Pile&apos;s future.</p>
                                     </div>
                                     <div className="column is-narrow">
                                         <a href="https://github.com/marc-dantas/pile" className="button is-dark is-rounded">Implementation Repository</a>

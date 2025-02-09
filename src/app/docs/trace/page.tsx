@@ -10,11 +10,11 @@ export default function Docs() {
 
             <Title2>Purpose</Title2>
             <P>
-                The <code>trace</code> operation in Pile is a simple yet powerful debugging tool designed to provide quick feedback during development. It serves as a "value checker" that helps identify potential issues in your program by outputting the current value on top of the stack to the console.
+                The <code>trace</code> operation in Pile is a simple yet powerful debugging tool designed to provide quick feedback during development. It serves as a &quot;value checker&quot; that helps identify potential issues in your program by outputting the current value on top of the stack to the console.
             </P>
 
             <Title2>Usage</Title2>
-            <P>The trace operation outputs the value at the top of the stack, allowing you to verify intermediate states in your program. Here's how it works:</P>
+            <P>The trace operation outputs the value at the top of the stack, allowing you to verify intermediate states in your program. Here&apos;s how it works:</P>
             <Text>
                 <ol>
                     <li>The value at the top of the stack is displayed.</li>

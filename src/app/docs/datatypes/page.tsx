@@ -73,7 +73,7 @@ export default function Docs() {
                     <tr>
                         <td><code>string</code></td>
                         <td>
-                            e.g. <code>"Hello, World!"</code>, <code>"This is a string"</code>, <code>""</code>, <code>" "</code>
+                            e.g. <code>&quot;Hello, World!&quot;</code>, <code>&quot;This is a string&quot;</code>, <code>&quot;&quot;</code>, <code>&quot; &quot;</code>
                         </td>
                     </tr>
                     <tr>

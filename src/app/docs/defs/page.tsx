@@ -1,6 +1,6 @@
 import DocsPage from "@/components/DocsPage";
 import Code from "@/components/Code";
-import { S, Kw, Op, N, C, B } from "@/components/Code";
+import { Kw, Op, N, C, B } from "@/components/Code";
 import { Title, Subtitle, P, Title2 } from "@/components/Docs";
 
 export default function Docs() {
@@ -24,7 +24,7 @@ export default function Docs() {
                 <Kw x="end" /><br />
             </Code>
 
-            <P><code>&lt;CONSTANT&gt;</code> can be any expression that results in a value on top of the stack to be associated with the definition's name.</P>
+            <P><code>&lt;CONSTANT&gt;</code> can be any expression that results in a value on top of the stack to be associated with the definition&apos;s name.</P>
 
             <Title2>Code examples</Title2>
             <P>Here&apos;s an example demonstrating a simple definition that stores the result of 1 + 1:</P>
@@ -39,7 +39,7 @@ export default function Docs() {
             <Code>
                 <Kw x="def" /> PI <N x="3.14159265359" /> <Kw x="end" /><br />
             </Code>
-            <P>Note that you can input any code inside the definition's block as long as there is a value on top of the stack <strong>produced by the expression</strong> to be bound to the name.</P>
+            <P>Note that you can input any code inside the definition&apos;s block as long as there is a value on top of the stack <strong>produced by the expression</strong> to be bound to the name.</P>
         </DocsPage>
     )
 }

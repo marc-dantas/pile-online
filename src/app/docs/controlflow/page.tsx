@@ -1,7 +1,7 @@
 import DocsPage from "@/components/DocsPage";
 import { Title, Subtitle, P, Title2 } from "@/components/Docs";
 import Code from "@/components/Code";
-import { C, Op, N, Kw, B } from "@/components/Code"; // Import B for built-ins
+import { Op, N, Kw, B } from "@/components/Code"; // Import B for built-ins
 
 export default function Docs() {
     return (
@@ -46,7 +46,7 @@ export default function Docs() {
                 <N x="  20" /> <B x="println" /><br />
                 <Kw x="end" />
             </Code>
-            <P>In this example, "20" will be printed because the condition is 0 (falsy).</P>
+            <P>In this example, &quot;20&quot; will be printed because the condition is 0 (falsy).</P>
 
             <Title2>Loops (<code>loop</code>)</Title2>
             <P>The <code>loop</code> keyword creates an infinite loop. Use <code>stop</code> to exit the loop.</P>
