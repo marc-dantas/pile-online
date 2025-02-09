@@ -27,7 +27,8 @@ To run the project locally:
 Visit `http://localhost:3000` to view the site locally.
 
 ## Public Deployment
-This website is not deployed yet.
+
+### This website is deployed and can be visited at [pile-lang.vercel.app](https://pile-lang.vercel.app/)
 
 ---
 
