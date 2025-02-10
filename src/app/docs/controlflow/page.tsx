@@ -49,19 +49,21 @@ export default function Docs() {
             <P>In this example, &quot;20&quot; will be printed because the condition is 0 (falsy).</P>
 
             <Title2>Loops (<code>loop</code>)</Title2>
-            <P>The <code>loop</code> keyword creates an infinite loop. Use <code>stop</code> to exit the loop.</P>
+            <P>The <code>loop</code> keyword creates an infinite loop.</P>
+            <P>Use <code>break</code> to exit the loop.</P>
+            <P>Use <code>continue</code> to jump to the next iteration.</P>
             <P>Syntax:</P>
             <Code>
                 <Kw x="loop" /><br />
                 <span>  &lt;CODE&gt;</span><br />
                 <Kw x="end" />
             </Code>
-            <P>Example with <code>if</code> and <code>stop</code>:</P>
+            <P>Example with <code>if</code> and <code>break</code>:</P>
             <Code>
                 <N x="0" /> <Kw x="loop" /><br />
                 <Op x="  dup" /> <B x="println" /><br />
                 <Op x="  dup" /> <N x="10" /> <Op x="=" /> <Kw x="if" /><br />
-                <Kw x="    stop" /><br />
+                <Kw x="    break" /><br />
                 <Kw x="  end" /><br />
                 <N x="  1" /> <Op x="+"/><br />
                 <Kw x="end" />
