@@ -2,7 +2,7 @@ import DocsPage from "@/components/DocsPage";
 import { Title, Subtitle, Title2, Text, P } from "@/components/Docs";
 import Code from "@/components/Code";
 // Code highlighting components
-import { Kw, N, Op, B, C, S } from "@/components/Code";
+import { Kw, N, Op, B, C } from "@/components/Code";
 
 export default function Docs() {
     return (
@@ -27,7 +27,7 @@ export default function Docs() {
             <P>To define a local variable in Pile, use the <code>as..let</code> statement block.</P>
             <P>Use the <code>as</code> keyword followed by the names of the variables you want to define, separated by space.</P>
             <P>Then write <code>let</code> and put the code that uses those variables inside the block</P>
-            <P><strong>NOTE</strong>: <code>as..let</code> statement needs values on top of the stack to bind. If there's no value or too few of them, you'll see an <a href="/docs/error/#unboundvariable">Unbound Variable</a> error.</P>
+            <P><strong>NOTE</strong>: <code>as..let</code> statement needs values on top of the stack to bind. If there&apos;s no value or too few of them, you&apos;ll see an <a href="/docs/error/#unboundvariable">Unbound Variable</a> error.</P>
             <P>Syntax:</P>
             <Code>
                 <Kw x="as" /> &lt;NAMES...&gt; <Kw x="let" /><br />

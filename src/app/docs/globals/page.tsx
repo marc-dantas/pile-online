@@ -26,7 +26,7 @@ export default function Docs() {
 
             <P>To define a variable in Pile, use the <code>let</code> statement.</P>
             <P>Use the <code>let</code> keyword followed by the name of the variable.</P>
-            <P><strong>NOTE</strong>: <code>let</code> statement needs a value on top of the stack to bind. If there's no value, you'll see an <a href="/docs/error/#unboundvariable">Unbound Variable</a> error.</P>
+            <P><strong>NOTE</strong>: <code>let</code> statement needs a value on top of the stack to bind. If there&apos;s no value, you&apos;ll see an <a href="/docs/error/#unboundvariable">Unbound Variable</a> error.</P>
             <P>Syntax:</P>
             <Code>
                 <Kw x="let" /> &lt;NAME&gt;<br />
