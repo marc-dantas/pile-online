@@ -164,6 +164,16 @@ export default function Docs() {
                     <C x='  # Nothing here!' /><br />
                 <Kw x="end" /><br />
             </Code>
+            
+            <Title4 id="unboundvariable">Unbound Variable</Title4>
+            <P>Unbound Variable is thrown when the interpreter can&apos;t bind a variable value a value on the stack. This happens because to define a variable, you need the amount of values on the stack corresponding to the variables you are defining.</P>
+            <P>Here&apos;s a simple code example:</P>
+            <Code>
+                <C x='# Nothing on the stack!' /><br />
+                <Kw x="as" /> no_value <Kw x="let" /> <C x="# In this case, it should expect 1 value on the stack" /><br />
+                <span>  no_value</span> <B x="println" /><br />
+                <Kw x="end" /><br />
+            </Code>
         </DocsPage>
     )
 }

@@ -41,17 +41,18 @@ export default function Home() {
                                             <p className="subtitle has-text-weight-semibold"><code>./fib.pile</code></p>
                                             <Code>
                                                 <Kw x="proc" /> fib<br />
-                                                <N x="  0 1" /><br />
-                                                <Kw x="  loop" /><br />
-                                                <Op x="    dup" /> N <Op x=">=" /> <Kw x="if" /><br />
-                                                <Op x="      dup" /> <B x="println" /><br />
-                                                <Op x="      over over +" /><br />
-                                                <Kw x="    else stop end" /><br />
-                                                <Kw x="  end" /><br />
-                                                <Kw x="end" /><br />
-                                                <br />
-                                                <Kw x="def" /> N <N x="400" /> <Kw x="end" /><br />
-                                                fib<br />
+                                                <Kw x="    let" /> n<br />
+                                                <N  x="    0 1" /><br />
+                                                <Kw x="    loop" /><br />
+                                                <span>        <Op x="over" /> n</span> <Op x="swap" /> <Op x="&gt;=" /> <Kw x="if break end"/><br />
+                                                <Kw x="        as" /> a b <Kw x="let" /><br />
+                                                <span>            a</span> <B x="println" /><br />
+                                                <span>            b a b</span> <Op x="+"/><br />
+                                                <Kw x="        end" /><br />
+                                                <Kw x="    end" /><br />
+                                                <Kw x="end" /><br /><br />
+
+                                                <N x="60000"/> fib<br />
                                             </Code>
                                         </div>
                                         <div className="column is-narrow">
