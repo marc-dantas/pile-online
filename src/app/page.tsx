@@ -22,8 +22,8 @@ export default function Home() {
                                         <Image alt="logo" width={300} height={300} src="/img/pile/logo.svg" />
                                     </div>
                                     <div className="column is-full">
-                                        <p className="is-italic is-size-4">
-                                            A concatenative and stack-based programming language designed to teach and explore the fundamentals of stack-oriented computation.
+                                        <p className="iosevka-italic is-size-4">
+                                            A concatenative scripting programming language designed to teach software basics and stack-based computing.
                                         </p>
                                     </div>
                                     <div className="column is-narrow">
@@ -69,7 +69,7 @@ export default function Home() {
                 <div className="hero-body">
                     <section id="learnmore" className="section">
                         <div className="container">
-                            <h2 className="title has-logo-font has-text-centered has-text-weight-bold">Learn More</h2>
+                            <h2 className="title has-text-centered has-text-weight-bold">Learn More</h2>
                             <div className="columns is-multiline">
                                 <div className="column is-full">
                                     <div className="box p-6">
@@ -80,7 +80,7 @@ export default function Home() {
                                             <div className="column">
                                                 <p className="title is-4 has-text-centered">Bridging the Gap</p>
                                                 <p className="is-size-4">
-                                                    Pile is a comprehensive educational tool designed to bridge the gap between novice programmers and one of the most feared foundational computer science concepts.
+                                                    Pile is a comprehensive educational tool designed to bridge the gap between novice programmers and computer science concepts.
                                                 </p>
                                             </div>
                                         </div>
@@ -121,12 +121,12 @@ export default function Home() {
                     </section>
                     <section className="section">
                         <div className="container">
-                            <h2 className="title has-logo-font has-text-centered has-text-weight-bold">Features</h2>
+                            <h2 className="title has-text-centered has-text-weight-bold">Features</h2>
                             <div className="columns is-multiline">
                                 <div className="column is-one-third">
                                     <div className="card">
                                         <div className="card-content">
-                                            <p className="title is-4 has-logo-font">Intuitive</p>
+                                            <p className="title is-4">Intuitive</p>
                                             <p>Pile is designed for easier understanding and an exponential learning curve for those familiar with other programming languages.</p>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@ export default function Home() {
                                 <div className="column is-one-third">
                                     <div className="card">
                                         <div className="card-content">
-                                            <p className="title is-4 has-logo-font">Educational Goals</p>
+                                            <p className="title is-4">Educational Goals</p>
                                             <p>Pile is crafted as a &quot;teacher&quot; for computer science students, always aiming to be concise, promoting algorithmic and logical thinking.</p>
                                         </div>
                                     </div>
@@ -142,7 +142,7 @@ export default function Home() {
                                 <div className="column is-one-third">
                                     <div className="card">
                                         <div className="card-content">
-                                            <p className="title is-4 has-logo-font">Focused on Simplicity</p>
+                                            <p className="title is-4">Focused on Simplicity</p>
                                             <p>Pile&apos;s codebase, syntax, and runtime behavior aim to be simple, practical, and predictable.</p>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@ export default function Home() {
                                 <div className="column is-one-third">
                                     <div className="card">
                                         <div className="card-content">
-                                            <p className="title is-4 has-logo-font">Open Source</p>
+                                            <p className="title is-4">Open Source</p>
                                             <p>All of the code and documentation is free and open-source. Join a community-driven project that thrives on collaboration.</p>
                                         </div>
                                     </div>
@@ -158,7 +158,7 @@ export default function Home() {
                                 <div className="column is-one-third">
                                     <div className="card">
                                         <div className="card-content">
-                                            <p className="title is-4 has-logo-font">Comprehensive Documentation</p>
+                                            <p className="title is-4">Comprehensive Documentation</p>
                                             <p>Pile offers a small and simple documentation for everyone. Learn with various examples, reference and theory. All included!</p>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@ export default function Home() {
                                 <div className="column is-one-third">
                                     <div className="card">
                                         <div className="card-content">
-                                            <p className="title is-4 has-logo-font">And Many More...</p>
+                                            <p className="title is-4">And Many More...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@ export default function Home() {
                     </section>
                     <section className="section">
                         <div className="container">
-                            <h2 className="title has-text-centered has-text-weight-bold has-logo-font">Learn Pile</h2>
+                            <h2 className="title has-text-centered has-text-weight-bold">Learn Pile</h2>
                             <p className="subtitle has-text-centered">Dive into the fundamentals of Pile and discover the simplicity and power of stack-based programming!</p>
                             <div className="box p-6">
                                 <div className="columns is-multiline is-centered">
@@ -200,7 +200,7 @@ export default function Home() {
                     </section>
                     <section className="section">
                         <div className="container">
-                            <h2 className="title has-logo-font has-text-centered has-text-weight-bold">Contributing</h2>
+                            <h2 className="title has-text-centered has-text-weight-bold">Contributing</h2>
                             <p className="subtitle has-text-centered">Become an active part of Pile&apos;s evolution!</p>
                             <div className="box p-6">
                                 <div className="columns is-multiline is-centered">

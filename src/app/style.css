@@ -1,8 +1,15 @@
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('/fonts/RobotoMono-Bold.ttf') format('truetype');
+    font-family: 'Iosevka Bold';
+    src: url('/fonts/Iosevka-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka Italic';
+    src: url('/fonts/Iosevka-BoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
 }
 
 .box {
@@ -13,9 +20,12 @@
     height: 100%;
 }
 
-.has-logo-font {
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: -1px;
+h1, h2, h3, h4, h5, h6, .iosevka-bold, .title {
+    font-family: 'Iosevka Bold', monospace;
+}
+
+.iosevka-italic {
+    font-family: 'Iosevka Italic', monospace;
 }
 
 .has-text-huge {

@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 export default function Code({ children }: { children: ReactNode }) {
     return (
-        <pre className="has-text-white is-size-5">{children}</pre>
+        <pre className="iosevka-bold has-text-white is-size-5">{children}</pre>
     )
 }
 
