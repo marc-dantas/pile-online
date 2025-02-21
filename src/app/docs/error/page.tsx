@@ -12,15 +12,19 @@ export default function Docs() {
             <Title2>How Errors Work</Title2>
             <P>In Pile, errors are represented like this:</P>
             <Code>
-                <span>pile: error at &lt;FILENAME&gt;:&lt;LINE&gt;:&lt;COL&gt;:</span><br />
-                <span>    | &lt;ERROR&gt;:</span><br />
-                <span>    |    &lt;MESSAGE&gt;</span><br />
-                <span>    + &lt;HELP&gt;</span><br />
+                <span>pile: &lt;ERROR&gt;:</span><br />
+                <span>    at &lt;FILENAME&gt;:&lt;LINE&gt;:</span><br />
+                <br />
+                <span>    &lt;CODE_LINE&gt;</span><br />
+                <span>    ^</span><br />
+                <span>    &lt;MESSAGE&gt;</span><br />
+                <span>  + &lt;HELP&gt;</span><br />
             </Code>
             <Text>
                 <ul>
                     <li><code>&lt;FILENAME&gt;</code>: The name of the file that the error was thrown.</li>
                     <li><code>&lt;LINE&gt;</code>: The line relative to the file that the error was thrown.</li>
+                    <li><code>&lt;CODE_LINE&gt;</code>: The actual line in the file relative to the file that the error was thrown.</li>
                     <li><code>&lt;COLUMN&gt;</code>: The line column relative to the file that the error was thrown.</li>
                     <li><code>&lt;ERROR&gt;</code>: The type of error that was thrown.</li>
                     <li><code>&lt;MESSAGE&gt;</code>: The error message.</li>
