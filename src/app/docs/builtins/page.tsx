@@ -42,13 +42,13 @@ export default function Docs() {
                         </td>
                     </tr>
                     <tr>
-                        <td><code>read</code></td>
+                        <td><code>input</code></td>
                         <td>
                             Reads input from stdin until EOF and pushes the input on top of the stack.
                         </td>
                     </tr>
                     <tr>
-                        <td><code>readln</code></td>
+                        <td><code>inputln</code></td>
                         <td>
                             Reads only a line from stdin and pushes the input on top of the stack.
                         </td>
