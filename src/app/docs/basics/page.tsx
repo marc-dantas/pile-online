@@ -44,21 +44,6 @@ export default function Docs() {
                 <C x="# Use println to print messages like Hello World" /><br />
                 <S x='"Hello World"' /> <B x="println" /><br />
             </Code>
-            <P>Pile works with the Last-in, First-out (LIFO) mechanism of executing operations. That means that the order of the operands of some operations that matter the order of the operands is reversed:</P>
-            <Code>
-                <C x="# Subtraction, for example, is reversed in order" /><br />
-                <N x="1 10" /> <Op x="-" /> <C x="# This is 10 - 1 and not 1 - 10" /><br />
-                <br />
-                <C x="# Division can be weird" /><br />
-                <N x="2 10" /> <Op x="/" /> <C x="# This is 10/2 and not 2/10" /><br />
-                <br />
-                <N x="1 10" /> <Op x="+" /> <C x="# In addition, the order doesn't matter" /><br />
-                <N x="10 1" /> <Op x="+" /> <C x="# In addition, the order doesn't matter" /><br />
-                <br />
-                <N x="5 2" /> <Op x="*" /> <C x="# Same for multiplication" /><br />
-                <N x="2 5" /> <Op x="*" /> <C x="# Same for multiplication" /><br />
-            </Code>
-
             <Title2>Control flow</Title2>
             <P>
                 Pile uses simple keywords like <code>if</code>, <code>else</code>, and <code>end</code> to handle conditional logic. Here&apos;s a small example:

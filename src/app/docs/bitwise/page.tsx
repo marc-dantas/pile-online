@@ -73,12 +73,10 @@ export default function Docs() {
                 <N x="5" /> <Op x="~" /> <C x="# The stack now contains: -6 (two's complement)" /><br />
                 <br />
                 <C x="# Shifting bits left" /><br />
-                <C x="# Remember about LIFO, the order is reversed, it is 3 << 2 and not 2 << 3" /><br />
-                <N x="2" /> <N x="3" /> <Op x="&lt;&lt;" /> <C x="# The stack now contains: 12" /><br />
+                <N x="2" /> <N x="3" /> <Op x="&lt;&lt;" /> <C x="# The stack now contains: 16" /><br />
                 <br />
                 <C x="# Shifting bits right" /><br />
-                <C x="# Remember about LIFO, the order is reversed, it is 16 >> 2 and not 2 >> 16" /><br />
-                <N x="2" /> <N x="16" /> <Op x="&gt;&gt;" /> <C x="# The stack now contains: 4" /><br />
+                <N x="16" /> <N x="2" /> <Op x="&gt;&gt;" /> <C x="# The stack now contains: 4" /><br />
             </Code>
             <Title2>Possible Errors</Title2>
             <Text>

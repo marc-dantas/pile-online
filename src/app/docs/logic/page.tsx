@@ -85,8 +85,7 @@ export default function Docs() {
                 <S x='"hello"' /> <S x='"world"' /> <Op x="!=" /> <C x="# The stack now contains: 1" /><br />
                 <br />
                 <C x="# Using greater than comparison" /><br />
-                <C x="# Remember about LIFO, the order is reversed, it is 10 > 15 and not 15 > 10" /><br />
-                <N x="15" /> <N x="10" /> <Op x=">" /> <C x="# The stack now contains: 0" /><br />
+                <N x="15" /> <N x="10" /> <Op x=">" /> <C x="# The stack now contains `true`" /><br />
             </Code>
             <Title2>Possible Errors</Title2>
             <Text>
