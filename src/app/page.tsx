@@ -2,7 +2,6 @@ import Footer from "@/components/Footer";
 import HomeNav from "@/components/Nav";
 import Code from "@/components/Code";
 import Image from "next/image"
-import Icon from "@/components/Icon";
 import { Kw, Op, B, N } from "@/components/Code";
 
 export default function Home() {
