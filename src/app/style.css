@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6, .iosevka-bold, .title {
     font-family: 'Iosevka Italic', monospace;
 }
 
+.notation {
+    font-family: 'Iosevka Italic';
+    font-size: 14pt;
+    letter-spacing: -2px;
+}
+
 .has-text-huge {
     font-size: 700%; 
 }
