@@ -29,9 +29,6 @@ export default function Home() {
                                     <div className="column is-narrow">
                                         <a href="/docs" className="button is-large is-rounded is-light">Go to Documentation</a>
                                     </div>
-                                    <div className="column is-narrow">
-                                        <a href="#learnmore" className="button is-large is-rounded is-light">Learn more</a>
-                                    </div>
                                 </div>
                             </div>
                             <div className="column is-hidden-mobile is-half">
@@ -44,7 +41,7 @@ export default function Home() {
                                                 <Kw x="    let" /> n<br />
                                                 <N  x="    0 1" /><br />
                                                 <Kw x="    loop" /><br />
-                                                <span>        <Op x="over" /> n</span> <Op x="swap" /> <Op x="&gt;=" /> <Kw x="if break end"/><br />
+                                                <span>        <Op x="over" /> n</span> <Op x="&gt;=" /> <Kw x="if break end"/><br />
                                                 <Kw x="        as" /> a b <Kw x="let" /><br />
                                                 <span>            a</span> <B x="println" /><br />
                                                 <span>            b a b</span> <Op x="+"/><br />
@@ -67,112 +64,6 @@ export default function Home() {
             </header>
             <main className="hero">
                 <div className="hero-body">
-                    <section id="learnmore" className="section">
-                        <div className="container">
-                            <h2 className="title has-text-centered has-text-weight-bold">Learn More</h2>
-                            <div className="columns is-multiline">
-                                <div className="column is-full">
-                                    <div className="box p-6">
-                                        <div className="columns">
-                                            <div className="column is-narrow is-hidden-mobile">
-                                                <Icon source="/icons/check.svg" />
-                                            </div>
-                                            <div className="column">
-                                                <p className="title is-4 has-text-centered">Bridging the Gap</p>
-                                                <p className="is-size-4">
-                                                    Pile is a comprehensive educational tool designed to bridge the gap between novice programmers and computer science concepts.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="column is-full">
-                                    <div className="box p-6">
-                                        <div className="columns">
-                                            <div className="column is-narrow is-hidden-mobile">
-                                                <Icon source="/icons/stack.svg" />
-                                            </div>
-                                            <div className="column">
-                                                <p className="title is-4 has-text-centered">Understanding Stack-Based Programming</p>
-                                                <p className="is-size-4">
-                                                    With a focus on stack-based programming, Pile empowers learners to visualize how data is manipulated, fostering a deeper understanding of algorithms and data structures.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="column is-full">
-                                    <div className="box p-6">
-                                        <div className="columns">
-                                            <div className="column is-narrow is-hidden-mobile">
-                                                <Icon source="/icons/book.svg" />
-                                            </div>
-                                            <div className="column">
-                                                <p className="title is-4 has-text-centered">A Supportive Learning Environment</p>
-                                                <p className="is-size-4">
-                                                    Our goal is to create a supportive environment where users can experiment, learn, and grow in their programming journey without the intimidation often associated with coding.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="section">
-                        <div className="container">
-                            <h2 className="title has-text-centered has-text-weight-bold">Features</h2>
-                            <div className="columns is-multiline">
-                                <div className="column is-one-third">
-                                    <div className="card">
-                                        <div className="card-content">
-                                            <p className="title is-4">Intuitive</p>
-                                            <p>Pile is designed for easier understanding and an exponential learning curve for those familiar with other programming languages.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="column is-one-third">
-                                    <div className="card">
-                                        <div className="card-content">
-                                            <p className="title is-4">Educational Goals</p>
-                                            <p>Pile is crafted as a &quot;teacher&quot; for computer science students, always aiming to be concise, promoting algorithmic and logical thinking.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="column is-one-third">
-                                    <div className="card">
-                                        <div className="card-content">
-                                            <p className="title is-4">Focused on Simplicity</p>
-                                            <p>Pile&apos;s codebase, syntax, and runtime behavior aim to be simple, practical, and predictable.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="column is-one-third">
-                                    <div className="card">
-                                        <div className="card-content">
-                                            <p className="title is-4">Open Source</p>
-                                            <p>All of the code and documentation is free and open-source. Join a community-driven project that thrives on collaboration.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="column is-one-third">
-                                    <div className="card">
-                                        <div className="card-content">
-                                            <p className="title is-4">Comprehensive Documentation</p>
-                                            <p>Pile offers a small and simple documentation for everyone. Learn with various examples, reference and theory. All included!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="column is-one-third">
-                                    <div className="card">
-                                        <div className="card-content">
-                                            <p className="title is-4">And Many More...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     <section className="section">
                         <div className="container">
                             <h2 className="title has-text-centered has-text-weight-bold">Learn Pile</h2>
