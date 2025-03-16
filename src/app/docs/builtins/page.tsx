@@ -1,5 +1,5 @@
 import DocsPage from "@/components/DocsPage";
-import { Title, Subtitle, Title2, Table, P } from "@/components/Docs";
+import { Title, Subtitle, Title2, Title3, Table, P } from "@/components/Docs";
 
 export default function Docs() {
     return (
@@ -8,7 +8,7 @@ export default function Docs() {
             <Subtitle>This topic is meant to document builtins in Pile</Subtitle>
             <Title2>What is a builtin?</Title2>
             <P>A builtin is an operation that is built into Pile&apos;s interpreter. Builtins can have various use cases and help the developer to create programs with basic features.</P>
-            <Title2>Builtins</Title2>
+            <Title3>I/O</Title3>
             <Table>
                 <thead className="has-text-weight-bold">
                     <tr>
@@ -53,6 +53,17 @@ export default function Docs() {
                             Reads only a line from stdin and pushes the input on top of the stack.
                         </td>
                     </tr>
+                </tbody>
+            </Table>
+            <Title3>Typing and conversion</Title3>
+            <Table>
+                <thead className="has-text-weight-bold">
+                    <tr>
+                        <td>Builtin</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td><code>tostring</code></td>
                         <td>
@@ -74,22 +85,43 @@ export default function Docs() {
                         </td>
                     </tr>
                     <tr>
-                        <td><code>tobool</code></td>
+                        <td><code>typeof</code></td>
                         <td>
-                            Converts the last element on the stack to a <code>bool</code>.
-                            If the conversion fails, it pushes a <code>nil</code> value instead.
+                            Pops the last item on the stack and pushes the name of the respective type of the item in question as a <code>string</code>.
                         </td>
                     </tr>
+                </tbody>
+            </Table>
+            <Title3>Environment and System</Title3>
+            <Table>
+                <thead className="has-text-weight-bold">
                     <tr>
-                        <td><code>chr</code></td>
-                        <td>
-                            Pops the last item on the stack (an integer) and interprets it as a character and pushes the corresponding <code>string</code> on top of the stack.
-                        </td>
+                        <td>Builtin</td>
+                        <td>Description</td>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td><code>exit</code></td>
                         <td>
                             Halts the execution of the program and exits with the exit code at the top of the stack.
+                        </td>
+                    </tr>
+                </tbody>
+            </Table>
+            <Title3>Strings</Title3>
+            <Table>
+                <thead className="has-text-weight-bold">
+                    <tr>
+                        <td>Builtin</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>chr</code></td>
+                        <td>
+                            Pops the last item on the stack (an integer) and interprets it as a character and pushes the corresponding <code>string</code> on top of the stack.
                         </td>
                     </tr>
                 </tbody>
