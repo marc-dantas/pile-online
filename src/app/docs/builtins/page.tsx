@@ -81,6 +81,12 @@ export default function Docs() {
                         </td>
                     </tr>
                     <tr>
+                        <td><code>chr</code></td>
+                        <td>
+                            Pops the last item on the stack (an integer) and interprets it as a character and pushes the corresponding <code>string</code> on top of the stack.
+                        </td>
+                    </tr>
+                    <tr>
                         <td><code>exit</code></td>
                         <td>
                             Halts the execution of the program and exits with the exit code at the top of the stack.
