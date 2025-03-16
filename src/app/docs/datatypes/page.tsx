@@ -41,6 +41,12 @@ export default function Docs() {
                         </td>
                     </tr>
                     <tr>
+                        <td><code>array</code></td>
+                        <td>
+                            Dynamic list of values, they can be of any type. 
+                        </td>
+                    </tr>
+                    <tr>
                         <td><code>nil</code></td>
                         <td>
                             Null type
@@ -80,6 +86,12 @@ export default function Docs() {
                         <td><code>bool</code></td>
                         <td>
                             <code>true</code> or <code>false</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>array</code></td>
+                        <td>
+                            <code>array [elements...] end</code>
                         </td>
                     </tr>
                     <tr>
