@@ -46,6 +46,9 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                                     <a href="/docs/stack" className={isActive("/docs/stack")}>Stack manipulation operations</a>
                                 </li>
                                 <li>
+                                    <a href="/docs/sequence" className={isActive("/docs/sequence")}>Sequence operations</a>
+                                </li>
+                                <li>
                                     <a href="/docs/trace" className={isActive("/docs/trace")}>The trace operation</a>
                                 </li>
                             </SidebarGroup>
@@ -69,6 +72,9 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                         </li>
                         <li>
                             <a href="/docs/locals" className={isActive("/docs/locals")}>Local Variables</a>
+                        </li>
+                        <li>
+                            <a href="/docs/arrays" className={isActive("/docs/arrays")}>Arrays</a>
                         </li>
                         <li>
                             <a href="/docs/procs" className={isActive("/docs/procs")}>Procedures</a>
