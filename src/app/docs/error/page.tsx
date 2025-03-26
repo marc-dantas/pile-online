@@ -173,6 +173,28 @@ export default function Docs() {
                 <span>  no_value</span> <B x="println" /><br />
                 <Kw x="end" /><br />
             </Code>
+
+            <Title4 id="arrayindexoutofbounds">Array Index Out Of Bounds</Title4>
+            <P>Array Index Out Of Bounds is thrown when the interpreter can&apos;t access a array element at the specified index by using a <a href="/docs/sequences">sequence operation</a> incorrectly.</P>
+            <P>Here&apos;s a simple code example:</P>
+            <Code>
+                <Kw x="array" /> <Op x="1 2 3" /> <Kw x="end" /><br />
+                <Kw x="  let"/> arr<br />
+                <br />
+                <C x="# Tried to access at index 20 but the size of the array is 3"/><br />
+                arr <N x="20" /> <Op x="@"/><br />
+            </Code>
+
+            <Title4 id="stringindexoutofbounds">String Index Out Of Bounds</Title4>
+            <P>String Index Out Of Bounds is thrown when the interpreter can&apos;t access string character at the specified index by using a <a href="/docs/sequences">sequence operation</a> incorrectly.</P>
+            <P>Here&apos;s a simple code example:</P>
+            <Code>
+                <S x='"abcdef"' /><br />
+                <Kw x="  let"/> str<br />
+                <br />
+                <C x="# Tried to access at index 13 but the size of the string is 6"/><br />
+                str <N x="13" /> <Op x="@"/><br />
+            </Code>
         </DocsPage>
     )
 }
