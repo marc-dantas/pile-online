@@ -124,6 +124,29 @@ export default function Docs() {
                             Pops the last item on the stack (an integer) and interprets it as a character and pushes the corresponding <code>string</code> on top of the stack.
                         </td>
                     </tr>
+                    <tr>
+                        <td><code>ord</code></td>
+                        <td>
+                            Pops a string of size 1 on top of the stack and pushes the character code as <code>int</code> back on the stack.
+                        </td>
+                    </tr>
+                </tbody>
+            </Table>
+            <Title3>Sequences</Title3>
+            <Table>
+                <thead className="has-text-weight-bold">
+                    <tr>
+                        <td>Builtin</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>len</code></td>
+                        <td>
+                            Pops a sequence on the top of the stack and pushes its size back.
+                        </td>
+                    </tr>
                 </tbody>
             </Table>
         </DocsPage>
