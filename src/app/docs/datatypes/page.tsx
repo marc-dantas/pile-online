@@ -43,7 +43,7 @@ export default function Docs() {
                     <tr>
                         <td><code>array</code></td>
                         <td>
-                            Dynamic list of values, they can be of any type. 
+                            Dynamic list of elements of any type. See <a href="/docs/arrays">/docs/arrays</a> for more information.
                         </td>
                     </tr>
                     <tr>
