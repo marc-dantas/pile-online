@@ -77,6 +77,9 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                             <a href="/docs/arrays" className={isActive("/docs/arrays")}>Arrays</a>
                         </li>
                         <li>
+                            <a href="/docs/strings" className={isActive("/docs/strings")}>Strings</a>
+                        </li>
+                        <li>
                             <a href="/docs/procs" className={isActive("/docs/procs")}>Procedures</a>
                         </li>
                         <li>

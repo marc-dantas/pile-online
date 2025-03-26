@@ -14,8 +14,7 @@ export default function Docs() {
             <Text>
                 <ul>
                     <li><a href="/docs/arrays">Arrays</a></li>
-                    {/* TODO: Add proper page for strings: docs/strings */}
-                    <li>Strings</li>
+                    <li><a href="/docs/strings">Strings</a></li>
                 </ul>
             </Text>
             <P>Sequence operations work in both of the sequence types but they may have different behaviors.</P>
