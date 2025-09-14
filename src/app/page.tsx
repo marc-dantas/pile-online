@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import HomeNav from "@/components/Nav";
 import Code from "@/components/Code";
 import Image from "next/image"
-import { Kw, Op, B, N } from "@/components/Code";
+import { Kw, Op, B, N, C } from "@/components/Code";
 
 export default function Home() {
     return (
@@ -22,7 +22,7 @@ export default function Home() {
                                     </div>
                                     <div className="column is-full">
                                         <p className="iosevka-italic is-size-4">
-                                            A concatenative scripting programming language designed to teach software basics and stack-based computing.
+                                            A simple, general-purpose concatenative scripting programming language meant to be minimal in syntax and intuitive.
                                         </p>
                                     </div>
                                     <div className="column is-narrow">
@@ -36,19 +36,19 @@ export default function Home() {
                                         <div className="column is-full">
                                             <p className="subtitle has-text-weight-semibold"><code>./fib.pile</code></p>
                                             <Code>
-                                                <Kw x="proc" /> fib<br />
-                                                <Kw x="    let" /> n<br />
-                                                <N  x="    0 1" /><br />
-                                                <Kw x="    loop" /><br />
-                                                <span>        <Op x="over" /> n</span> <Op x="&gt;=" /> <Kw x="if break end"/><br />
-                                                <Kw x="        as" /> a b <Kw x="let" /><br />
-                                                <span>            a</span> <B x="println" /><br />
-                                                <span>            b a b</span> <Op x="+"/><br />
-                                                <Kw x="        end" /><br />
-                                                <Kw x="    end" /><br />
-                                                <Kw x="end" /><br /><br />
-
-                                                <N x="60000"/> fib<br />
+                                              <C x="# Fibonacci sequence in Pile programming language" /><br />
+                                              <Kw x="proc" /> fib<br />
+                                              <N x="    0" /> <N x="1" /> <Kw x="as" /> n a b <Kw x="let" /><br />
+                                              <span>    </span>n <N x="1" /> <Op x="<=" /> <Kw x="if" /> n <Kw x="return" /> <Kw x="end" /><br />
+                                              <N x="    2" /> <Kw x="loop" /> <Op x="dup" /> n <N x="1" /> <Op x="+" /> <Op x="=" /> <Kw x="if" /> <Kw x="break" /> <Kw x="end" /><br />
+                                              <span>        </span>a b <Op x="+" /> b<br />
+                                              <Kw x="          let" /> a<br />
+                                              <Kw x="          let" /> b<br />
+                                              <N x="        1" /> <Op x="+" /><br />
+                                              <Kw x="    end" /> <Op x="drop" /><br />
+                                              <span>    </span>b<br />
+                                              <Kw x="end" /><br /><br />
+                                              <N x="69" /> fib <B x="println" /><br />
                                             </Code>
                                         </div>
                                         <div className="column is-narrow">
