@@ -68,10 +68,7 @@ export default function DocsSidebar({ children }: DocsSidebarProps) {
                             <a href="/docs/controlflow" className={isActive("/docs/controlflow")}>Control flow</a>
                         </li>
                         <li>
-                            <a href="/docs/globals" className={isActive("/docs/globals")}>Global Variables</a>
-                        </li>
-                        <li>
-                            <a href="/docs/locals" className={isActive("/docs/locals")}>Local Variables</a>
+                            <a href="/docs/variables" className={isActive("/docs/variables")}>Variables and Scope</a>
                         </li>
                         <li>
                             <a href="/docs/arrays" className={isActive("/docs/arrays")}>Arrays</a>
