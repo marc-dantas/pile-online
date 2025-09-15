@@ -129,48 +129,12 @@ export default function Docs() {
                 GIRLFRIEND_PHONE_NUMBER <B x="println" /><br />
             </Code>
 
-            <Title4 id="procredefinition">Procedure Redefinition</Title4>
-            <P>Procedure Redefinition is thrown when the interpreter finds a second definition of a procedure in the program.</P>
-            <P>Here&apos;s a simple code example:</P>
-            <Code>
-                <Kw x="proc" /> again<br />
-                <S x='  "Hello, World"' /> <B x="println" /><br />
-                <Kw x="end" /><br />
-                <br />
-                <Kw x="proc" /> again <C x="# again!" /><br />
-                <S x='  "Hello, World"' /> <B x="println" /><br />
-                <Kw x="end" /><br />
-            </Code>
-
-            <Title4 id="defredefinition">Definition Redefinition</Title4>
-            <P>Definition Redefinition is basically the same error as <a href="#procredefinition">Procedure Redefinition</a> error but for Definitions.</P>
-            <P>Here&apos;s a simple code example:</P>
-            <Code>
-                <Kw x="def" /> PI<br />
-                <N x="    3.1415"/><br />
-                <Kw x="end" /><br />
-                <br />
-                <Kw x="def" /> PI <C x="# again!" /><br />
-                <N x="    3.1415"/><br />
-                <Kw x="end" /><br />
-            </Code>
-            
             <Title4 id="emptydef">Empty Definition</Title4>
             <P>Empty Definition is thrown when the interpreter can&apos;t bind a definition to any value. This happens because there&apos;s no value on top of the stack after the execution of the definition block.</P>
             <P>Here&apos;s a simple code example:</P>
             <Code>
                 <Kw x="def" /> empty<br />
                     <C x='  # Nothing here!' /><br />
-                <Kw x="end" /><br />
-            </Code>
-            
-            <Title4 id="unboundvariable">Unbound Variable</Title4>
-            <P>Unbound Variable is thrown when the interpreter can&apos;t bind a variable value a value on the stack. This happens because to define a variable, you need the amount of values on the stack corresponding to the variables you are defining.</P>
-            <P>Here&apos;s a simple code example:</P>
-            <Code>
-                <C x='# Nothing on the stack!' /><br />
-                <Kw x="as" /> no_value <Kw x="let" /> <C x="# In this case, it should expect 1 value on the stack" /><br />
-                <span>  no_value</span> <B x="println" /><br />
                 <Kw x="end" /><br />
             </Code>
 
