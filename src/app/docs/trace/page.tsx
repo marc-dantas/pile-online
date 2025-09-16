@@ -24,13 +24,13 @@ export default function Docs() {
 
             <Title2>Examples</Title2>
             <Code>
-                <S x='"This text"' /> <Op x="trace" /><br />
+                <S x='"This is concatenated with "' /> <Op x="trace" /><br />
                 <C x="# The previous text is still on the stack, that's why it is possible to concatenate now" /><br />
-                <S x='"This is concatenated with "' /> <Op x="+" /><br />
+                <S x='"This text"' /> <Op x="+" /><br />
 
                 <br />
                 <N x="1" /> <N x="1" /> <Op x="+" /> <Op x="trace" /><br />
-                <C x="# Result: int 2" /><br />
+                <C x="# Output: int 2" /><br />
                 <C x="# Stack: [ 2 ]" /><br />
             </Code>
         </DocsPage>
