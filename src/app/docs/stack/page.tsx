@@ -15,8 +15,7 @@ export default function Docs() {
                     <tr>
                         <td>Name</td>
                         <td>Operation</td>
-                        <td>Stack notation</td>
-                        <td>Description</td>
+                        <td colSpan={2}>Description</td>
                     </tr>
                 </thead>
                 <tbody>
