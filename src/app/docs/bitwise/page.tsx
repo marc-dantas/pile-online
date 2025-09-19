@@ -15,7 +15,7 @@ export default function Docs() {
                     <tr>
                         <td>Name</td>
                         <td>Operation</td>
-                        <td>Description</td>
+                        <td colSpan={2}>Description</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,26 +23,38 @@ export default function Docs() {
                         <td>AND</td>
                         <td><code>&amp;</code></td>
                         <td>
-                            Pops the last 2 numbers from the stack and pushes their bitwise AND.
+                            <span className="notation">( a b &mdash; a&b )</span>
+                        </td>
+                        <td>
+                            Pops the last 2 numbers from the stack and pushes their bitwise AND or common logic gate if both values are boolean.
                         </td>
                     </tr>
                     <tr>
                         <td>OR</td>
                         <td><code>|</code></td>
                         <td>
-                            Pops the last 2 numbers from the stack and pushes their bitwise OR.
+                            <span className="notation">( a b &mdash; a|b )</span>
+                        </td>
+                        <td>
+                            Pops the last 2 numbers from the stack and pushes their bitwise OR or common logic gate if both values are boolean.
                         </td>
                     </tr>
                     <tr>
                         <td>NOT</td>
                         <td><code>~</code></td>
                         <td>
-                            Pops the top number from the stack and pushes its bitwise NOT.
+                            <span className="notation">( a &mdash; ~a )</span>
+                        </td>
+                        <td>
+                            Pops the top number from the stack and pushes its bitwise NOT or common logic gate if value is boolean.
                         </td>
                     </tr>
                     <tr>
                         <td>Shift Left</td>
                         <td><code>&lt;&lt;</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; a&lt;&lt;b )</span>
+                        </td>
                         <td>
                             Pops the last 2 numbers from the stack (value and shift amount) and 
                             pushes the result of shifting the value left.
@@ -51,6 +63,9 @@ export default function Docs() {
                     <tr>
                         <td>Shift Right</td>
                         <td><code>&gt;&gt;</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; a&gt;&gt;b )</span>
+                        </td>
                         <td>
                             Pops the last 2 numbers from the stack (value and shift amount) and 
                             pushes the result of shifting the value right.

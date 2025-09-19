@@ -15,13 +15,16 @@ export default function Docs() {
                     <tr>
                         <td>Name</td>
                         <td>Operation</td>
-                        <td>Description</td>
+                        <td colSpan={2}>Description</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Add/Concatenate</td>
                         <td><code>+</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; a+b )</span>
+                        </td>
                         <td>
                             Pops the last 2 items from the stack and pushes their sum 
                             (if numbers) or concatenation (if strings).
@@ -30,26 +33,41 @@ export default function Docs() {
                     <tr>
                         <td>Subtract</td>
                         <td><code>-</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; a-b )</span>
+                        </td>
                         <td>Pops the last 2 items from the stack and pushes their difference.</td>
                     </tr>
                     <tr>
                         <td>Multiply</td>
                         <td><code>*</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; ab )</span>
+                        </td>
                         <td>Pops the last 2 items from the stack and pushes their product.</td>
                     </tr>
                     <tr>
                         <td>Divide</td>
                         <td><code>/</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; a&divide;b )</span>
+                        </td>
                         <td>Pops the last 2 items from the stack and pushes their quotient.</td>
                     </tr>
                     <tr>
                         <td>Modulo</td>
                         <td><code>%</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; a%b )</span>
+                        </td>
                         <td>Pops the last 2 items from the stack and pushes their modulo.</td>
                     </tr>
                     <tr>
                         <td>Exponent</td>
                         <td><code>**</code></td>
+                        <td>
+                            <span className="notation">( a b &mdash; a<sup>b</sup> )</span>
+                        </td>
                         <td>Pops the last 2 items from the stack and exponentiates the numbers.</td>
                     </tr>
                 </tbody>

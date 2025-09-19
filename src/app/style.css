@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6, .iosevka-bold, .title {
 
 .notation {
     font-family: 'Iosevka';
+    white-space: nowrap;
     font-size: 13pt;
-    letter-spacing: -2px;
 }
 
 .has-text-huge {

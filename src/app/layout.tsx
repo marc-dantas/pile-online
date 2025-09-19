@@ -3,8 +3,8 @@ import "./style.css";
 import "bulma";
 
 export const metadata: Metadata = {
-    title: "Pile Programming Language",
-    description: "Educational Stack-based Programming language",
+    title: "Pile",
+    description: "Concatenative scripting programming language",
 };
 
 export default function RootLayout({

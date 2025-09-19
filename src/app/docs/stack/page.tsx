@@ -23,7 +23,7 @@ export default function Docs() {
                         <td>Duplicate</td>
                         <td><code>dup</code></td>
                         <td>
-                            <span className="notation">( a -- a a )</span>
+                            <span className="notation">( a &mdash; a a )</span>
                         </td>
                         <td>
                             Duplicates the top item of the stack. 
@@ -33,7 +33,7 @@ export default function Docs() {
                         <td>Drop</td>
                         <td><code>drop</code></td>
                         <td>
-                            <span className="notation">( a --  )</span>
+                            <span className="notation">( a &mdash;  )</span>
                         </td>
                         <td>
                             Removes the top item from the stack.
@@ -43,7 +43,7 @@ export default function Docs() {
                         <td>Swap</td>
                         <td><code>swap</code></td>
                         <td>
-                            <span className="notation">( a b -- b a )</span>
+                            <span className="notation">( a b &mdash; b a )</span>
                         </td>
                         <td>
                             Swaps the top two items on the stack.
@@ -53,7 +53,7 @@ export default function Docs() {
                         <td>Over</td>
                         <td><code>over</code></td>
                         <td>
-                            <span className="notation">( a b -- a b a )</span>
+                            <span className="notation">( a b &mdash; a b a )</span>
                         </td>
                         <td>
                             Copies the second item on the stack to the top.
@@ -63,7 +63,7 @@ export default function Docs() {
                         <td>Rotate</td>
                         <td><code>rot</code></td>
                         <td>
-                            <span className="notation">( a b c -- b c a )</span>
+                            <span className="notation">( a b c &mdash; b c a )</span>
                         </td>
                         <td>
                             Rotates the top three items on the stack, moving the third item to the top.
