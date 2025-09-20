@@ -65,20 +65,17 @@ export default function Home() {
                 <div className="hero-body">
                     <section className="section">
                         <div className="container">
-                            <h2 className="title has-text-centered has-text-weight-bold">Learn Pile</h2>
-                            <p className="subtitle has-text-centered">Dive into the fundamentals of Pile and discover the simplicity and power of stack-based programming!</p>
+                            <h2 className="title has-text-centered has-text-weight-bold">Learning Resources</h2>
                             <div className="box p-6">
                                 <div className="columns is-multiline is-centered">
                                     <div className="column content is-full">
-                                        <h4 className="title is-4">Why learn Pile?</h4>
-                                        <p className="is-size-4">Whether you&apos;re a beginner or an experienced developer looking to explore a fresh approach to coding, Pile can still be an amazing tool for teachers, students and even mathematicians.</p>
-                                        <p className="is-size-4">With a comprehensive and small documentation, you can learn Pile in a few hours and start learning even more!</p>
-                                        <h4 className="title is-4">What is in the documentation?</h4>
+                                        <p className="is-size-4">This website provides a concise documentation. You may find it useful to start using the language.</p>
+                                        <h4 className="title is-4">The docs include:</h4>
                                         <ul className="is-size-4">
                                             <li>Brief introduction and explanation of Pile and how it works</li>
                                             <li>Language Reference</li>
-                                            <li>Code examples</li>
-                                            <li>And more!</li>
+                                            <li>Code examples (<em>coming soon</em>)</li>
+                                            <li>Standard library reference (<em>coming soon</em>)</li>
                                         </ul>
                                     </div>
                                     <div className="column is-narrow">
@@ -91,7 +88,6 @@ export default function Home() {
                     <section className="section">
                         <div className="container">
                             <h2 className="title has-text-centered has-text-weight-bold">Contributing</h2>
-                            <p className="subtitle has-text-centered">Become an active part of Pile&apos;s evolution!</p>
                             <div className="box p-6">
                                 <div className="columns is-multiline is-centered">
                                     <div className="column is-full">
