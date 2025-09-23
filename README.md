@@ -1,35 +1,32 @@
+# Pile Online
 
-# Pile Programming Language Website
+[Pile programming language](https://github.com/marc-dantas/pile) website and documentation.
 
-This is the official website for the **Pile** programming language. It provides documentation and resources for learning and using Pile.
+## Quickstart
 
-It is made in [Next.js](https://nextjs.org/) and uses [Bulma CSS](https://bulma.io/).
-
-## Local development server
-
-To run the project locally:
-
-1. Clone the repository:
-   ```bash
+1. **Clone the repo:**
+   ```
    git clone https://github.com/marc-dantas/pile-online.git
+   cd pile-online
    ```
 
-2. Install dependencies:
-   ```bash
+2. **Install dependencies:**  
+   ```
    npm install
    ```
 
-3. Start the development server:
-   ```bash
+3. **Run the development server:**  
+   ```
    npm run dev
    ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Visit `http://localhost:3000` to view the site locally.
+## Public deployment
+Access this website without needing to build it yourself [here](https://pile-lang.vercel.app).
 
-## Public Deployment
-
-### This website is deployed and can be visited at [pile-lang.vercel.app](https://pile-lang.vercel.app/)
+## Docs
+See [docs](./src/app/docs) folder for language reference and examples.
 
 ---
 
-> Licensed under the [GPL-3.0 License](./LICENSE).
+> By Marcio Dantas
