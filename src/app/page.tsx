@@ -72,7 +72,7 @@ export default function Home() {
                                         <p className="is-size-4">This website provides a concise documentation. You may find it useful to start using the language.</p>
                                         <h4 className="title is-4">The docs include:</h4>
                                         <ul className="is-size-4">
-                                            <li>Brief introduction and explanation of Pile and how it works</li>
+                                            <li><a href="/docs/introduction">Brief introduction</a> and explanation of Pile and <a href="/docs/howpileworks">how it works</a></li>
                                             <li>Language Reference</li>
                                             <li>Code examples (<em>coming soon</em>)</li>
                                             <li>Standard library reference (<em>coming soon</em>)</li>
