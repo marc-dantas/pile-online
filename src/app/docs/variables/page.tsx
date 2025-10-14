@@ -33,7 +33,7 @@ export default function Docs() {
                 <C x="# or you will get a "/><a href="/docs/error#stackunderflow">Stack Underflow</a> <C x="error"/><br/>
                 <N x="69"/> <Kw x="let"/> x<br/><br/>
                 <C x="# Now, to use it, just refer to its name and its value will be pushed onto the stack:"/><br/>
-                x <B x="println"/> <C x="# Result: 69"/><br/>
+                x <B x="Print"/> <C x="# Result: 69"/><br/>
             </Code>
 
             <Title3>Using <code>as-let</code> statement</Title3>
@@ -63,7 +63,7 @@ export default function Docs() {
                 <span>  number</span> <Op x="dup *" /><br />
                 <Kw x="end" /><br />
                 <br />
-                <N x="8" /> square <B x="println" /><br />
+                <N x="8" /> square <B x="Print" /><br />
                 <C x="# Output: 64" /><br />
             </Code>
             

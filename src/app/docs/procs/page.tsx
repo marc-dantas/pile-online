@@ -40,7 +40,7 @@ export default function Docs() {
                 <Op x="  + +" /><br />
                 <Kw x="end" /><br />
                 <br />
-                <N x="5 5 5" /> add_three_numbers <B x="println" /><br />
+                <N x="5 5 5" /> add_three_numbers <B x="Print" /><br />
                 <C x="# Output: 15" /><br />
             </Code>
 
@@ -50,7 +50,7 @@ export default function Docs() {
                 <Op x="  dup *" /><br />
                 <Kw x="end" /><br />
                 <br />
-                <N x="8" /> square <B x="println" /><br />
+                <N x="8" /> square <B x="Print" /><br />
                 <C x="# Output: 64" /><br />
             </Code>
             
@@ -58,9 +58,9 @@ export default function Docs() {
             <Code>
                 <Kw x="proc" /> even_odd<br />
                 <N x="  2" /> <Op x="swap %" /> <N x="0" /> <Op x="=" /> <Kw x="if" /><br />
-                    <S x='    "Even"' /> <B x="println" /><br />
+                    <S x='    "Even"' /> <B x="Print" /><br />
                 <Kw x="  else" /><br />
-                    <S x='    "Odd"' /> <B x="println" /><br />
+                    <S x='    "Odd"' /> <B x="Print" /><br />
                 <Kw x="  end" /><br />
                 <Kw x="end" /><br />
                 <br />

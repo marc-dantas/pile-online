@@ -38,7 +38,7 @@ export default function Docs() {
             <Code>
 
                 <S x='"I am unterminated'/><br />
-                <B x="println" />
+                <B x="Print" />
             </Code>
     
             <Title4 id="invalidcharacter">Invalid Character</Title4>
@@ -56,7 +56,7 @@ export default function Docs() {
                 <C x="# Non-ascii characters are illegal" /><br />
                 <C x="#    vvvvvv" /><br />
                 <Kw x="proc" /> привет<br />
-                <S x='    "Привет, мир"' /> <B x="println" /><br />
+                <S x='    "Привет, мир"' /> <B x="Print" /><br />
                 <C x="    # But inside strings it's fine" /><br />
                 <Kw x="end" /><br />
             </Code>
@@ -86,7 +86,7 @@ export default function Docs() {
             <P>Here&apos;s a simple code example:</P>
             <Code>
                 <Kw x="proc" /> my_unterminated_procedure<br />
-                <S x='  "Hello, Pile"' /> <B x="println" /><br />
+                <S x='  "Hello, Pile"' /> <B x="Print" /><br />
                 <br />
                 <C x="# where&apos;s the end?" /><br />
             </Code>
@@ -96,7 +96,7 @@ export default function Docs() {
             <P>Here&apos;s a simple code example:</P>
             <Code>
                 <S x='"hello" "pile"'/> <Op x="=" /> <Kw x="if"/><br />
-                <S x='  "hello" "pile"'/> <Op x="swap +" /> <B x="println" /><br />
+                <S x='  "hello" "pile"'/> <Op x="swap +" /> <B x="Print" /><br />
                 <Kw x="end"/><br />
                 <Kw x="end"/> <C x="# bruh" /><br />
             </Code>
@@ -118,7 +118,7 @@ export default function Docs() {
             <Code>
                 <S x='"69"'/> <N x="420" /> <Op x="="/> <Kw x="if"></Kw><br />
                 <C x="  #      ^ this is not JS please" /><br />
-                <S x='  "bruh"'/> <B x="println" /><br />
+                <S x='  "bruh"'/> <B x="Print" /><br />
                 <Kw x="end"></Kw><br />
             </Code>
 
@@ -126,7 +126,7 @@ export default function Docs() {
             <P>Invalid Word is thrown when the interpreter finds an undefined name in any part of the program.</P>
             <P>Here&apos;s a simple code example:</P>
             <Code>
-                GIRLFRIEND_PHONE_NUMBER <B x="println" /><br />
+                GIRLFRIEND_PHONE_NUMBER <B x="Print" /><br />
             </Code>
 
             <Title4 id="emptydef">Empty Definition</Title4>

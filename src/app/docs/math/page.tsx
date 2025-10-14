@@ -82,7 +82,7 @@ export default function Docs() {
                 <N x="10" /> <N x="10" /> <Op x="+" /> <C x="# The stack now contains: 20" /><br />
                 <br />
                 <C x="# Concatenating strings" /><br />
-                <S x='"Pile "' /> <S x='"Programming Language"' /> <Op x="+" /> <B x="println" /><br />
+                <S x='"Pile "' /> <S x='"Programming Language"' /> <Op x="+" /> <B x="Print" /><br />
                 <C x="# Output: Pile Programming Language" /><br />
                 <C x="# Note: Concatenation works only with strings, not numbers." /><br />
                 <br />

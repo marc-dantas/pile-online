@@ -36,13 +36,13 @@ export default function Docs() {
                 <Op x="drop" /><br />
                 <C x="# Removes the top value: 20" /><br />
             </Code>
-            <P>Use <code>trace</code> operation to write to the terminal the last item on top of the stack. Use <code>println</code> to print to stdout the last string on top of the stack (if it is a number, converts it to a string)</P>
+            <P>Use <code>trace</code> operation to write to the terminal the last item on top of the stack. Use <code>Print</code> to print to stdout the last string on top of the stack (if it is a number, converts it to a string)</P>
             <Code>
                 <C x="# Use trace as a debugging operation" /><br />
                 <N x="99" /> <Op x="trace" /><br />
                 <br />
-                <C x="# Use println to print messages like Hello World" /><br />
-                <S x='"Hello World"' /> <B x="println" /><br />
+                <C x="# Use Print to write messages like Hello World" /><br />
+                <S x='"Hello World"' /> <B x="Print" /><br />
             </Code>
             <Title2>Control flow</Title2>
             <P>
@@ -66,7 +66,7 @@ export default function Docs() {
             <Code>
                 <C x="# Procedure example" /><br />
                 <Kw x="proc" /> say_hello<br />
-                <S x='  "Hello, Pile!"' /> <B x="println" /><br />
+                <S x='  "Hello, Pile!"' /> <B x="Print" /><br />
                 <Kw x="end" /><br />
                 <br />
                 <C x="# Calling the procedure" /><br />

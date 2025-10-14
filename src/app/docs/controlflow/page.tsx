@@ -20,10 +20,10 @@ export default function Docs() {
             <P>Example:</P>
             <Code>
                 <N x="1" /> <Kw x="if" /><br />
-                <N x="  10" /> <B x="println" /><br />
+                <N x="  10" /> <B x="Print" /><br />
                 <Kw x="end" /><br />
                 <N x="0" /> <Kw x="if" /><br />
-                <N x="  20" /> <B x="println" /><br />
+                <N x="  20" /> <B x="Print" /><br />
                 <Kw x="end" />
             </Code>
             <P>In this example, only 10 will be printed, as 1 is truthy and 0 is falsy.</P>
@@ -41,9 +41,9 @@ export default function Docs() {
             <P>Example:</P>
             <Code>
                 <N x="0" /> <Kw x="if" /><br />                
-                <N x="  10" /> <B x="println" /><br />
+                <N x="  10" /> <B x="Print" /><br />
                 <Kw x="else" /><br />
-                <N x="  20" /> <B x="println" /><br />
+                <N x="  20" /> <B x="Print" /><br />
                 <Kw x="end" />
             </Code>
             <P>In this example, &quot;20&quot; will be printed because the condition is 0 (falsy).</P>
@@ -61,7 +61,7 @@ export default function Docs() {
             <P>Example with <code>if</code> and <code>break</code>:</P>
             <Code>
                 <N x="0" /> <Kw x="loop" /><br />
-                <Op x="  dup" /> <B x="println" /><br />
+                <Op x="  dup" /> <B x="Print" /><br />
                 <Op x="  dup" /> <N x="10" /> <Op x="=" /> <Kw x="if" /><br />
                 <Kw x="    break" /><br />
                 <Kw x="  end" /><br />

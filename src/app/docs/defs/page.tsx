@@ -31,7 +31,7 @@ export default function Docs() {
             <Code>
                 <Kw x="def" /> ONEPLUSONE <N x="1 1" /> <Op x="+"/> <Kw x="end" /><br />
                 <br />
-                ONEPLUSONE <B x="println" /><br />
+                ONEPLUSONE <B x="Print" /><br />
                 <C x="# Output: 2" /><br />
             </Code>
 
