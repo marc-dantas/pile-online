@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import HomeNav from "@/components/Nav";
 import Code from "@/components/Code";
 import Image from "next/image"
-import { Kw, Op, B, N, C } from "@/components/Code";
+import { Kw, Op, B, N, C, S } from "@/components/Code";
 
 export default function Home() {
     return (
@@ -36,19 +36,20 @@ export default function Home() {
                                         <div className="column is-full">
                                             <p className="subtitle has-text-weight-semibold"><code>./fib.pile</code></p>
                                             <Code>
-                                              <C x="# Fibonacci sequence in Pile programming language" /><br />
-                                              <Kw x="proc" /> fib<br />
-                                              <N x="    0" /> <N x="1" /> <Kw x="as" /> n a b <Kw x="let" /><br />
-                                              <span>    </span>n <N x="1" /> <Op x="<=" /> <Kw x="if" /> n <Kw x="return" /> <Kw x="end" /><br />
-                                              <N x="    2" /> <Kw x="loop" /> <Op x="dup" /> n <N x="1" /> <Op x="+" /> <Op x="=" /> <Kw x="if" /> <Kw x="break" /> <Kw x="end" /><br />
-                                              <span>        </span>a b <Op x="+" /> b<br />
-                                              <Kw x="          let" /> a<br />
-                                              <Kw x="          let" /> b<br />
-                                              <N x="        1" /> <Op x="+" /><br />
-                                              <Kw x="    end" /> <Op x="drop" /><br />
-                                              <span>    </span>b<br />
-                                              <Kw x="end" /><br /><br />
-                                              <N x="69" /> fib <B x="println" /><br />
+                                                <C x="# Fibonacci sequence in Pile programming language" /><br />
+                                                <Kw x="import" /> <S x='"std/io.pile"'/><br /><br />
+                                                <Kw x="proc" /> Fib<br />
+                                                <N x="    0" /> <N x="1" /> <Kw x="as" /> n a b <Kw x="let" /><br />
+                                                <span>    </span>n <N x="1" /> <Op x="<=" /> <Kw x="if" /> n <Kw x="return" /> <Kw x="end" /><br />
+                                                <N x="    2" /> <Kw x="loop" /> <Op x="dup" /> n <N x="1" /> <Op x="+" /> <Op x="=" /> <Kw x="if" /> <Kw x="break" /> <Kw x="end" /><br />
+                                                <span>        </span>a b <Op x="+" /> b<br />
+                                                <Kw x="            let" /> a<br />
+                                                <Kw x="            let" /> b<br />
+                                                <N x="        1" /> <Op x="+" /><br />
+                                                <Kw x="    end" /> <Op x="drop" /><br />
+                                                <span>    b</span><br />
+                                                <Kw x="end" /><br /><br />
+                                                <N x="69" /> Fib <B x="Print" /><br />
                                             </Code>
                                         </div>
                                         <div className="column is-narrow">
