@@ -1,7 +1,7 @@
 import DocsPage from "@/components/DocsPage";
 import { Title, Subtitle, P, Title2, Title3 } from "@/components/Docs";
 import Code from "@/components/Code";
-import { Op, N, Kw, B, S } from "@/components/Code"; // Import B for built-ins
+import { Op, N, Kw, B } from "@/components/Code"; // Import B for built-ins
 
 export default function Docs() {
   return (
@@ -124,7 +124,7 @@ export default function Docs() {
         <br />
         <Kw x="end" />
       </Code>
-      <P>This will output "1 2 3 4 5 6 7 8 9 10"</P>
+      <P>This will output &quot;1 2 3 4 5 6 7 8 9 10&quot;</P>
 
       <Title3>
         The <code>for</code> statement
@@ -161,7 +161,7 @@ export default function Docs() {
         <Kw x="  end" />
         <br />
       </Code>
-      <P>This will output "1 2 4 5"</P>
+      <P>This will output &quot;1 2 4 5&quot;</P>
     </DocsPage>
   );
 }
